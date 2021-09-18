@@ -1,5 +1,7 @@
 # Fossabot Docs
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/42138592-e5d9-471e-8d93-9ccecbfa6800/deploy-status)](https://app.netlify.com/sites/fossabot-docs/deploys)
+
 > The official public Fossabot documentation, hosted at [docs.fossa.bot](https://docs.fossa.bot).
 
 ## Setup
