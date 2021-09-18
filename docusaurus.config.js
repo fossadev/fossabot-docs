@@ -59,11 +59,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Documentation',
-                to: '/',
+                label: 'Getting Started',
+                to: '/getting-started',
               },
             ],
           },
@@ -98,7 +98,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()}, FossaDev Ltd. All rights reserved. Registered in England and Wales (No. 12219499).`,
+        copyright: `© ${new Date().getFullYear()}, FossaDev Ltd. Not affiliated with Twitch. Registered in England and Wales (No. 12219499).`,
       },
       prism: {
         theme: lightCodeTheme,

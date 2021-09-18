@@ -4,7 +4,8 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap);
+
 :root {
   --ifm-color-primary: #3e8eed;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -13,7 +14,15 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --global-font: "IBM Plex Sans", sans-serif;
   --ifm-code-font-size: 95%;
+  --ifm-heading-font-family: var(--global-font);
+  --ifm-font-family-base: var(--global-font);
+  --fossa-darkest: #121212;
+}
+
+html, body {
+  font-family: var(--global-font);
 }
 
 .docusaurus-highlight-code-line {
@@ -25,4 +34,12 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--fossa-darkest);
+}
+
+code {
+  white-space: pre-wrap;
 }
