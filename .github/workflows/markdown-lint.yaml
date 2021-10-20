@@ -1,0 +1,16 @@
+name: Markdown linting
+
+on: [push, pull_request]
+
+jobs:
+  linting:
+    name: "Lint markdown files"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout code
+
+      - name: Lint markdown files
+        uses: docker://avtodev/markdown-lint:v1
+        with:
+          args: "**/*.md"
