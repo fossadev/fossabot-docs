@@ -12,7 +12,7 @@ The variable will return `[Error: Cannot be executed inside of a timer]` if you 
 
 :::
 
-## $(sender.accountage)
+## $(sender.accountage)
 
 Returns how long it has been since the sender created their Twitch account.
 
@@ -20,7 +20,7 @@ Returns how long it has been since the sender created their Twitch account.
 4 years, 3 months and 2 days
 ```
 
-## $(sender.accountsince)
+## $(sender.accountsince)
 
 Returns the date that the sender created their Twitch account.
 
