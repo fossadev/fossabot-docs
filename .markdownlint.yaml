@@ -1,0 +1,7 @@
+default: true
+
+# I'm lazy, I don't wanna pad extra lines for these code blocks
+MD031: false
+
+# Requiring a language in code blocks (we use them for some text formatting)
+MD040: false
