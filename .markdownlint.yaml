@@ -1,5 +1,8 @@
 default: true
 
+# Disabling line length
+MD013: false
+
 # I'm lazy, I don't wanna pad extra lines for these code blocks
 MD031: false
 
