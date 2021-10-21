@@ -4,7 +4,7 @@ id: user
 
 # $(user)
 
-This variable returns either the first argument in the command, or if that is unavailable, the username of the person who triggered the command. 
+This variable returns either the first argument in the command, or if that is unavailable, the username of the person who triggered the command.
 
 :::caution Timers are not supported.
 
@@ -12,9 +12,9 @@ The variable will not return any value in a timer.
 
 :::
 
-### Example Output
+## Example Output
 
-If you made a shoutout command: 
+If you made a shoutout command:
 
 ```
 Shout out to $(user.display_name)! Go follow them at twitch.tv/$(user.login) - they were last seen playing $(user.game)!
@@ -24,7 +24,6 @@ You could use `!shoutout aiden`, which would produce this output:
 ```
 Shout out to Aiden! Go follow them at twitch.tv/aiden - they were last seen playing Just Chatting! 
 ```
-
 
 ## $(user.accountage)
 
