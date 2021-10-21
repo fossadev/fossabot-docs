@@ -8,8 +8,8 @@ Returns the latest YouTube video for a channel or playlist.
 
 The required parameter for this variable is either a:
 
-- channel name (e.g: `timthetatman`)
-- channel id (e.g: `UCXBE_QQSZueB8082ml5fslg`)
+- channel name (e.g: `sodapoppin33`)
+- channel id (e.g: `UCmDTrq0LNgPodDOFZiSbsww`)
 - playlist id (e.g: `playlist=PLKeR9CeyAc9brDTtmz6DcCQpy5mA6m9AK`)
 
 ## Latest channel video
