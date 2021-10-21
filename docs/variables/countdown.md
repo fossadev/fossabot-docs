@@ -22,7 +22,7 @@ For example, `$(countdown Jan 01 2022 00:00:00 GMT-0400)` would use EDT as the t
 
 You can find a list of all timezones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-#### Accepted date formatting:
+**Accepted date formatting:**
 
 - `2022-01-01`
 - `Jan 01 2022`
@@ -30,7 +30,7 @@ You can find a list of all timezones [here](https://en.wikipedia.org/wiki/List_o
 - `Jan 1st 2022`
 - `1st Jan 2022`
 
-#### Accepted time formatting:
+**Accepted time formatting:**
 
 - `14:00:00`
 - `02:00:00PM`
