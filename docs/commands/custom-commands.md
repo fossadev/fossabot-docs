@@ -21,7 +21,7 @@ Start by adding the command name. This is the command that will be used in chat:
 
 ![cmdname](../../static/img/commands/cmdname.png)
 
-Response is what you would like to be sent to chat. This can include normal text but also utilize [Variables](../variables/variables-intro):
+Response is what you would like to be sent to chat. This can include normal text but also utilize variables:
 
 ![response](../../static/img/commands/response.png)
 
