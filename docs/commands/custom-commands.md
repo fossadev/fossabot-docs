@@ -5,7 +5,7 @@ sidebar_position: 0
 
 # Creating Commands
 
-Custom commands give users the ability to create a command with their desired response. 
+Custom commands give users the ability to create a command with their desired response.
 
 To create a custom command, navigate to the Commands tab on the sidebar:
 
@@ -15,7 +15,7 @@ After click the Create button in the top right corner:
 
 ![create](../../static/img/commands/create.png)
 
-### Creating a Simple Command
+## Creating a Simple Command
 
 Start by adding the command name. This is the command that will be used in chat:
 
@@ -37,16 +37,15 @@ Cooldowns are essential to controlling how often a command is used and to avoid 
 
 ### Global Cooldowns
 
-Global cooldowns are the minimum frequency a command can be triggered by any user in chat. 
+Global cooldowns are the minimum frequency a command can be triggered by any user in chat.
 
 If a single user triggers a command, the **entire** chat must wait until the cooldown is over until this command can be triggered again.
 
 ### User Cooldowns
 
-User Cooldowns are the minimum frequency a single user trigger a command. 
+User Cooldowns are the minimum frequency a single user trigger a command.
 
 If User-A triggers a command they must wait X amount of seconds before they can trigger the command again. User-B can still trigger the command.
-
 
 ## Aliases
 
@@ -58,12 +57,11 @@ Create an alias by typing in the box and using the Enter key on your keyboard or
 
 ![alias2](../../static/img/commands/alias2.gif)
 
-
 ## Response Type
 
 Response type defines how Fossabot answers commands.
 
-Fossabot has 4 response types, Say, Mention, Reply, and Whisper. 
+Fossabot has 4 response types, Say, Mention, Reply, and Whisper.
 
 ### Say
 
@@ -81,7 +79,7 @@ Mention will Mention the user in the command response:
 
 Reply uses [Twitch's chat reply feature](https://help.twitch.tv/s/article/chat-basics?language=en_US#replies) to send the command response.
 
-![replytype1](../../static/img/commands/replytype1.png) 
+![replytype1](../../static/img/commands/replytype1.png)
 
 ![replytype2](../../static/img/commands/replytype2.png)
 
@@ -89,7 +87,7 @@ Reply uses [Twitch's chat reply feature](https://help.twitch.tv/s/article/chat-b
 
 Whisper will send the user a direct message with the command response.
 
-![whispertype1](../../static/img/commands/whispertype1.png) 
+![whispertype1](../../static/img/commands/whispertype1.png)
 
 ![whispertype2](../../static/img/commands/whispertype2.png)
 
@@ -109,23 +107,23 @@ Conditions are options that affect how the command may work.
 
 ![conditions](../../static/img/commands/conditions.png)
 
-#### Enabled when stream offline
+### Enabled when stream offline
 
 This toggle changes if this command is triggerable while the stream is offline.
 
-#### Enabled when stream online
+### Enabled when stream online
 
 This toggle changes if this command is triggerable while the stream is online.
 
-#### Hidden in directory
+### Hidden in directory
 
 Removes command from public command list. Command is still triggerable in chat.
 
-#### Whisper during cooldowns
+### Whisper during cooldowns
 
 If the command is on cooldown, The user will be whispered with the response.
 
-## Expiry 
+## Expiry
 
 Expiry disables or deletes a command after a specific time or a selected time and date. Expiry is disabled by default.
 
