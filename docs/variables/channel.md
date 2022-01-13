@@ -90,9 +90,17 @@ If you believe that the channel name is available and that the user that has tak
 fossabot
 ```
 
-## $(channel.subscribers)
+## $(channel.subcount)
 
 Returns the current number of users [subscribed](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) to their Twitch channel.
+
+```
+36
+```
+
+## $(channel.subpoints)
+
+Returns the current number of [sub points](https://help.twitch.tv/s/article/emote-slots?language=en_US#sub) a user has on their channel.
 
 ```
 36
