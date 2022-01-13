@@ -4,7 +4,7 @@ id: user
 
 # $(user)
 
-This variable returns either the first argument in the command, or if that is unavailable, the username of the person who triggered the command.
+This variable returns either the first argument in the command, or if that is unavailable, the username of the person who triggered the command, or a custom specified user (for example `$(user aiden)` would use `aiden` as the user).
 
 :::caution Timers are not supported.
 
@@ -23,6 +23,12 @@ Shout out to $(user.display_name)! Go follow them at twitch.tv/$(user.login) - t
 You could use `!shoutout aiden`, which would produce this output:
 ```
 Shout out to Aiden! Go follow them at twitch.tv/aiden - they were last seen playing Just Chatting! 
+```
+
+Or, you could hardcode a user, for example `!fossabot`, which would produce this output:
+
+```
+Shout out to $(user.display_name fossabot)! Go follow them at twitch.tv/$(user.login fossabot) - they were last seen playing $(user.game fossabot)!
 ```
 
 ## $(user.accountage)
