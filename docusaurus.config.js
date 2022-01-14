@@ -42,12 +42,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/logo.svg',
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'welcome',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
           {
             href: 'https://github.com/fossadev/fossabot-docs',
             label: 'GitHub',
@@ -87,6 +81,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             title: 'More',
             items: [
+              {
+                label: 'GitHub',
+                to: 'https://github.com/fossadev/fossabot-docs',
+              },
               {
                 label: 'Terms of Serivce',
                 to: 'https://fossadev.com/tos',
