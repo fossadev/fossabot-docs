@@ -4,6 +4,12 @@
 
 > The official public Fossabot documentation, hosted at [docs.fossa.bot](https://docs.fossa.bot).
 
+## Feedback
+
+Issues are currently disabled for this repo, however we do welcome plenty of discusion about our documentation, and encourage others to get involved, most of our discussion happens on Discord. They're disabled right now simply because to keep contributors in a single place where we can work together.
+
+If you would like to give feedback, discuss any improvements, or anything you'd typically make an issue for, feel free to [Join the Discord](https://fossabot.com/discord)!
+
 ## Setup
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
