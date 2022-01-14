@@ -6,9 +6,9 @@
 
 ## Feedback
 
-Issues are currently disabled for this repo, however we do welcome plenty of discusion about our documentation, and encourage others to get involved, most of our discussion happens on Discord. They're disabled right now simply because to keep contributors in a single place where we can work together.
+Issues are currently disabled for this repo, however we do welcome plenty of discusion about our documentation, and encourage others to get involved. Most of our discussion happens on Discord right now, simply to keep contributors in one place where we can work together.
 
-If you would like to give feedback, discuss any improvements, or anything you'd typically make an issue for, feel free to [Join the Discord](https://fossabot.com/discord)!
+If you would like to give feedback, or bring up anything you'd typically make a GitHub issue for, feel free to [Join the Discord](https://fossabot.com/discord) and post in #v2-bugs or #v2-feedback!
 
 ## Setup
 
