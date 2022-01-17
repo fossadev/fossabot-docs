@@ -4,118 +4,220 @@ id: sender
 
 # $(sender)
 
-The `$(sender)` variable represents the user who sent the message.
+Returns a range of metadata around the sender's channel that can be accessed via multiple different variable members for each unique piece of information.
 
-:::caution Timers are not supported.
+:::caution Timers are not supported!
 
-The variable will return `[Error: Cannot be executed inside of a timer]` if you try to use this inside of a timer.
+Timers are executed on an interval by Fossabot itself and therefore this variable cannot be used inside of them.
+
+If your timer iterates through existing commands that use this variable, or if this variable is used in a timer response, Fossabot will return `[Error: Cannot be executed inside of a timer]`.
 
 :::
 
 ## $(sender.accountage)
 
-Returns how long it has been since the sender created their Twitch account.
+Returns the time that has passed since the sender created their **Twitch account**.
 
-```
-4 years, 3 months and 2 days
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.accountage)`
+
+    ```
+    3 years, 2 months and 1 day
+    ```
 
 ## $(sender.accountsince)
 
-Returns the date that the sender created their Twitch account.
+Returns the date when the sender created their **Twitch account** in coordinated universal time (UTC).
 
-```
-Mon, 06 Apr 2015 23:09:03 UTC
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.accountsince)`
+
+    ```
+    Mon, 06 Apr 2015 23:09:03 UTC
+    ```
 
 ## $(sender.display_name)
 
-Returns the uppercased version, or internationalized version of the senders' username.
+Returns the same as `$(sender)`, the uppercase version, or internationalized version of the sender's username.
 
-```
-Aiden
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.display_name)`
+
+    ```
+    Aiden
+    ```
 
 ## $(sender.followers)
 
-Returns the number of followers the sender has.
+Returns the current number of followers of the sender.
 
-```
-5304
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.followers)`
+
+    ```
+    5305
+    ```
 
 ## $(sender.game)
 
 Returns the current Twitch directory the sender is under.
 
-```
-Just Chatting
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.game)`
+
+    ```
+    Just Chatting
+    ```
 
 ## $(sender.login)
 
-Returns the same as `$(sender)`, the lowercase sender username (otherwise known as "login").
+Returns the same as `$(sendername)`, the lowercase version of the sender's username (otherwise known as *login*).
 
-```
-aiden
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.login)`
+
+    ```
+    aiden
+    ```
 
 ## $(sender.provider)
 
-The platform that the message was sent from.
+Returns the platform the sender sent the message from (i.e. twitch).
 
-```
-twitch
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.provider)`
+
+    ```
+    twitch
+    ```
 
 ## $(sender.provider_id)
 
-The users' platform ID that the message was sent from.
+Returns the platform ID (e.g. the Twitch ID) of the sender.
 
-```
-87763385
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.provider_id)`
+
+    ```
+    87763385
+    ```
 
 ## $(sender.title)
 
-Returns the current title on the senders' Twitch channel.
+Returns the current stream title of the sender's Twitch channel.
 
-```
-Welcome to my stream!
-```
+#### Parameters
 
-## $(sender.viewers)
+This variable does not take any parameters.
 
-Returns the current number of viewers the sender has on their stream.
+#### Example Output
 
-If they are live:
-```
-24
-```
+* `$(sender.title)`
 
-If they are offline:
-```
-[Error: Stream is offline.]
-```
-
-## $(sender.views)
-
-Returns the total number of channel profile views that the sender has.
-
-```
-50463
-```
+    ```
+    Welcome to my stream!
+    ```
 
 ## $(sender.uptime)
 
-Returns how long the sender has been streaming for.
+Returns the time that has passed since the sender's stream has gone live.
 
-If they are live:
-```
-3 hours and 2 minutes
-```
+#### Parameters
 
-If they are offline:
-```
-[Error: Stream is offline.]
-```
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.uptime)`
+
+    ```
+    3 hours and 25 minutes
+    ```
+
+#### Error Output
+
+* In case the sender's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+    ```
+
+## $(sender.viewers)
+
+Returns the current number of viewers watching the stream of the sender.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.viewers)`
+
+    ```
+    36
+    ```
+
+#### Error Output
+
+* In case the sender's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+    ```
+
+## $(sender.views)
+
+Returns the total number of views that the sender has on their profile page.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.views)`
+
+    ```
+    50463
+    ```

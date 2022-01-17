@@ -4,26 +4,36 @@ id: youtube
 
 # $(youtube)
 
-Returns the latest YouTube video for a channel or playlist.
+Returns the latest YouTube video of a channel or the first YouTube video in a playlist.
 
-The required parameter for this variable is either a:
+#### Parameters
 
-- channel name (e.g: `sodapoppin33`)
-- channel id (e.g: `UCmDTrq0LNgPodDOFZiSbsww`)
-- playlist id (e.g: `playlist=PLKeR9CeyAc9brDTtmz6DcCQpy5mA6m9AK`)
+This variable takes **one** *required* parameter that is a either a **channel name**, **channel ID** or **playlist ID**.
 
-## Latest channel video
+#### Example Output
 
-For example, `$(youtube UCmDTrq0LNgPodDOFZiSbsww)` may return:
+* `$(youtube xqcow)`
 
-```
-xQc Cries from Laughing at Fan-Made Memes | Reddit Recap #213 - https://youtu.be/ONPkz0cHt9E
-```
+    ```
+    xQc Cries from Laughing at Fan-Made Memes | Reddit Recap #213 - https://youtu.be/ONPkz0cHt9E
+    ```
 
-## First playlist video
+* `$(youtube UCmDTrq0LNgPodDOFZiSbsww)`
 
-For example, `$(youtube playlist=PLKeR9CeyAc9brDTtmz6DcCQpy5mA6m9AK)` may return:
+    ```
+    xQc Cries from Laughing at Fan-Made Memes | Reddit Recap #213 - https://youtu.be/ONPkz0cHt9E
+    ```
 
-```
-xQc GTA Roleplay Server NoPixel 3.0 | Episode 1 - https://youtu.be/M6dorxRzp-0
-```
+* `$(youtube playlist=PLKeR9CeyAc9brDTtmz6DcCQpy5mA6m9AK)`
+
+    ```
+    xQc GTA Roleplay Server NoPixel 3.0 | Episode 1 - https://youtu.be/M6dorxRzp-0
+    ```
+
+#### Error Output
+
+* In case an invalid or no channel name, channel ID or playlist ID is provided, returns the following:
+
+    ```
+    [Error: YouTube API returned an error.]
+    ```

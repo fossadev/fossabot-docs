@@ -4,140 +4,254 @@ id: channel
 
 # $(channel)
 
-The channel variable offers a range of metadata around the broadcasters' channel on Fossabot. It takes a range of parameters that allow you to fetch unique metadata about the broadcaster.
-
-Passing just `$(channel)` as a variable argument in Fossabot will resolve to the user lowercase channel name (otherwise known as "login"), for example: `fossabot`.
+Returns a range of metadata around a broadcaster's channel that can be accessed via multiple different variable members for each unique piece of information.
 
 ## $(channel.accountage)
 
-Returns when the user created their **Twitch account** NOT their Fossabot account.
+Returns the time that has passed since a broadcaster created their **Twitch account**.
 
-```
-3 years, 2 months and 1 day ago.
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.accountage)`
+
+    ```
+    3 years, 2 months and 1 day
+    ```
 
 ## $(channel.accountsince)
 
-Returns the date that the user created their **Twitch account** NOT their Fossabot account.
+Returns the date when a broadcaster created their **Twitch account** in coordinated universal time (UTC).
 
-```
-Mon, 06 Apr 2015 23:09:03 UTC
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.accountsince)`
+
+    ```
+    Mon, 06 Apr 2015 23:09:03 UTC
+    ```
 
 ## $(channel.display_name)
 
-Returns the uppercased version, or internationalized version of the broadcasters' channel name.
+Returns the uppercase version, or internationalized version of a broadcaster's username.
 
-```
-Fossabot
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.display_name)`
+
+    ```
+    Fossabot
+    ```
 
 ## $(channel.followers)
 
-Returns the current number of followers the broadcaster has.
+Returns the current number of followers of a broadcaster.
 
-```
-5305
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.followers)`
+
+    ```
+    5305
+    ```
 
 ## $(channel.id)
 
-Returns the channels internal Fossabot ID, **not to be confused with the Twitch ID**.
+Returns the internal **Fossabot ID** of a broadcaster, **not to be confused with the Twitch ID**.
 
-```
-123
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.id)`
+
+    ```
+    123
+    ```
 
 ## $(channel.login)
 
-Returns the same as `$(channel)`, the lowercase channel name (otherwise known as "login").
+Returns the same as `$(channel)`, the lowercase version of a broadcaster's username (otherwise known as *login*).
 
-```
-fossabot
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.login)`
+
+    ```
+    fossabot
+    ```
 
 ## $(channel.provider)
 
-The platform that the account was created from (ie `twitch`).
+Returns the platform a broadcaster's account was created on (i.e. twitch).
 
-```
-twitch
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.provider)`
+
+    ```
+    twitch
+    ```
 
 ## $(channel.provider_id)
 
-The platform ID (eg. their Twitch ID) of the broadcaster on Fossabot. This is **not an internal Fossabot ID**. If you queried this ID with the [Twitch API](https://dev.twitch.tv/docs/api/reference#get-users), it would return the broadcaster.
+Returns the platform ID (e.g. the Twitch ID) of a broadcaster, **not to be confused with the internal Fossabot ID**.
 
-```
-123456789
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.provider_id)`
+
+    ```
+    237719657
+    ```
 
 ## $(channel.slug)
 
-Returns the **Fossabot channel URL** of the broadcaster. This is useful for linking to commands pages, and dashboards on Fossabot.
+Returns the **Fossabot channel URL** of a broadcaster. This is useful for linking to commands pages, and dashboards on Fossabot.
 
-:::info Fossabot slugs may not match a Twitch username.
+:::info Fossabot slugs might not match a broadcaster's username!
 
-It's important to note that just like Twitch, Fossabot has to ensure that all channel URLs on the platform remain unique, therefore we handle cases where someone may have had the same name as you on Twitch before.
+It's important to note that just like Twitch, Fossabot has to ensure that all channel URLs on the platform remain unique. Therefore we handle cases where someone may have had the same name as you on Twitch before in a special way.
 
-For example, someone named `bob` logged into Fossabot. Later, `bob` namechanged to `bob123` and never logged into Fossabot again. If you changed your username to `bob` then tried to log into Fossabot, you would likely get a randomly generated channel slug, such as `bob_2353`.
+For example, someone named **`bob`** logged into Fossabot. Later, **`bob`** namechanged to **`bob123`** and never logged into Fossabot again. If you changed your username to **`bob`** and tried to log into Fossabot, you would likely get a randomly generated channel slug such as **`bob_2353`**.
 
-If you believe that the channel name is available and that the user that has taken your name is inactive, feel free to [reach out to us on Discord](https://fossabot.com/discord) and we may be able to help you obtain your original channel slug.
+If you believe that your channel name is available and that the user that has taken your name is inactive, feel free to [**reach out to us on Discord**](https://fossabot.com/discord) and we might be able to help you obtain your original channel slug.
 
 :::
 
-```
-fossabot
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.slug)`
+
+    ```
+    fossabot
+    ```
 
 ## $(channel.subcount)
 
-Returns the current number of users [subscribed](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) to their Twitch channel.
+Returns the current number of [**subscribed users**](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) of a broadcaster.
 
-```
-36
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.subcount)`
+
+    ```
+    36
+    ```
 
 ## $(channel.subpoints)
 
-Returns the current number of [sub points](https://help.twitch.tv/s/article/emote-slots?language=en_US#sub) a user has on their channel.
+Returns the current number of [**sub points**](https://help.twitch.tv/s/article/emote-slots?language=en_US#sub) of a broadcaster.
 
-```
-36
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.subpoints)`
+
+    ```
+    46
+    ```
 
 ## $(channel.uptime)
 
-Returns the current stream uptime.
+Returns the time that has passed since a broadcaster's stream has gone live.
 
-If the channel is live:
-```
-3 hours and 25 minutes
-```
+#### Parameters
 
-If the channel is offline:
-```
-[Error: Stream is offline.]
-```
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.uptime)`
+
+    ```
+    3 hours and 25 minutes
+    ```
+
+#### Error Output
+
+* In case a broadcaster's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+    ```
 
 ## $(channel.viewers)
 
-Returns the current number of viewers watching the stream.
+Returns the current number of viewers watching the stream of a broadcaster.
 
-If the stream is live:
-```
-36
-```
+#### Parameters
 
-If the stream is offline:
-```
-[Error: Stream is offline.]
-```
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.viewers)`
+
+    ```
+    36
+    ```
+
+#### Error Output
+
+* In case a broadcaster's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+    ```
 
 ## $(channel.views)
 
-Returns the total number of views that the channel has on their profile.
+Returns the total number of views that a broadcaster has on their profile page.
 
-```
-100354
-```
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.views)`
+
+    ```
+    100354
+    ```

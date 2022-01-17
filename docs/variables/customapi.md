@@ -4,41 +4,61 @@ id: customapi
 
 # $(customapi)
 
-Allows you to get the response of a HTTP GET request to a specified URL.
+Returns the response of a HTTP GET request to a specified URL.
 
-There is no example output, this is solely dependent on what the API returns, Fossabot ignores all status codes, and returns the raw body contents.
+#### Parameters
 
-## Developers
+This variable takes ***one*** *required* parameter that is a URL to send the HTTP GET request to.
 
-Fossabot supports a few custom HTTP headers that you may use to build deeper integrations.
+#### Example Output
 
-## IP Ranges
+There is no example output as it solely depends on what the requested URL returns.
 
-Fossabot's proxy does not use a consistent IP range to send requests. You cannot rely on it for authenticating endpoints, it's recommended you include a key query parameter or something to authenticate users, we don't print customapi URLs on public commands pages.
+#### Error Output
 
-## Common Headers
+* In case an invalid URL is provided, or the remote server cannot be reached, returns the following:
 
-These headers are present on all customapi requests.
+    ```
+    [Error: Failed to connect to remote server.]
+    ```
 
-|              Name               |                                        Value                                        |
-| :-----------------------------: | :---------------------------------------------------------------------------------: |
-|     `x-fossabot-channelid`      |                        Internal channel ID of fossaobt user.                        |
-| `x-fossabot-channeldisplayname` |      The uppercased version, or internationalized version of the channel name       |
-|    `x-fossabot-channellogin`    |                 The lowercase channel name (also known as "login")                  |
-|    `x-fossabot-channelslug`     |         The **Fossabot channel URL**. Useful for linking to commands pages.         |
-|  `x-fossabot-channelprovider`   |                     The platform it was sent from, eg. `twitch`                     |
-| `x-fossabot-channelproviderid`  |                       The platforms channel ID, ie: Twitch ID                       |
-|     `x-fossabot-hasmessage`     | `true` or `false` depending on whether a message sent this (`false` if timer, etc). |
-|          `user-agent`           |                                `Fossabot Web Proxy`                                 |
+### Developers
 
-## Headers for Messages
+**All status codes** will be **ignored** and only the **raw body content** of the requested URL will be returned.
 
-These headers are for requests sent from messages, therefore are attached to a particular user.
+Fossabot also sends multiple custom HTTP headers that you can use to build deeper integrations, a list of them can be found below.
+
+### IP Ranges
+
+Fossabot's proxy **does not** use a consistent IP range to send requests. You **cannot** rely on it for authenticating endpoints!
+
+We recommended that you include a key query parameter or something else to authenticate users.
+
+**For that reason we do NOT print customapi URLs on public commands pages.**
+
+### List of Common Headers
+
+These headers are present in **all** requests.
+
+|              Name               |                                        Value                                         |
+| :-----------------------------: | :----------------------------------------------------------------------------------: |
+|     `x-fossabot-channelid`      |                   The internal **Fossabot ID** of a broadcaster.                     |
+| `x-fossabot-channeldisplayname` |   The uppercase version, or internationalized version of a broadcaster's username.   |
+|    `x-fossabot-channellogin`    |   The lowercase version of a broadcaster's username (otherwise known as *login*).    |
+|    `x-fossabot-channelslug`     | The **Fossabot channel URL** of a broadcaster. Useful for linking to commands pages. |
+|  `x-fossabot-channelprovider`   |               The platform the request was sent from (e.g. `twitch`).                |
+| `x-fossabot-channelproviderid`  |                The platform ID (e.g. the Twitch ID) of a broadcaster.                |
+|     `x-fossabot-hasmessage`     | `true` or `false` depending on whether a message sent this (`false` if timer, etc).  |
+|          `user-agent`           |                                `Fossabot Web Proxy`                                  |
+
+### List of Message Headers
+
+These headers are present in requests **sent from messages** and therefore attached to a particular user.
 
 |                 Name                 |                                                                    Value                                                                     |
 | :----------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------: |
-|       `x-fossabot-message-id`        |                                                 The message ID from the provider, eg. Twitch                                                 |
-|    `x-fossabot-message-userlogin`    |                                         The lowercase username of the sender (also known as "login")                                         |
-| `x-fossabot-message-userdisplayname` |                                 The uppercased version, or internationalized version of the sender username                                  |
-|  `x-fossabot-message-userprovider`   | The platform the message was sent from by the user (this is useful if a discord user toggles a twitch command through the discord bot, etc). |
-| `x-fossabot-message-userproviderid`  |                                                   The senders' platform ID, ie: Twitch ID                                                    |
+|       `x-fossabot-message-id`        |                                                 The message ID from the provider (e.g. Twitch).                                              |
+|    `x-fossabot-message-userlogin`    |                                The lowercase version of the sender's username (otherwise known as *login*).                                  |
+| `x-fossabot-message-userdisplayname` |                                The uppercase version, or internationalized version of the sender's username.                                 |
+|  `x-fossabot-message-userprovider`   | The platform the message was sent from by the user (this is useful if a Discord user toggles a Twitch command through the Discord bot, etc). |
+| `x-fossabot-message-userproviderid`  |                                               The platform ID (e.g. the Twitch ID) of the sender.                                            |

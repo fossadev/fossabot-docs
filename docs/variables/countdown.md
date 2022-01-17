@@ -4,33 +4,51 @@ id: countdown
 
 # $(countdown)
 
-Countdown tells you the amount of time until a certain date has passed.
+Returns the time that is left until a certain date has passed. Shares this behaviour with `$(countup)`.
 
-For example, `$(countdown 2022-01-01 00:00:00)` will make the bot calculate the time until 1st Jan 2022.
+#### Parameters
 
-```
-2 months, 10 days and 2 hours
-```
+This variable takes ***one*** *required* parameter that is a date string to count down to.
 
-To use a specific timezone you can add the UTC offset to the timestamp.
+* **Accepted Date Formats**
+  * `2030-01-01`
+  * `Jan 01 2030`
+  * `01 Jan 2030`
+  * `Jan 1st 2030`
+  * `1st Jan 2030`
 
-For example, `$(countdown Jan 01 2022 00:00:00 GMT-0400)` would use EDT as the timezone.
+* **Accepted Time Formats**
+  * `14:00:00`
+  * `02:00:00PM`
 
-```
-2 months, 10 days and 6 hours
-```
+If you would like to specify a different timezone than coordinated universal time (UTC), you can do so by providing the UTC offset to that timezone (e.g. `GMT-0400` for EDT) at the end of the date string.
 
-You can find a list of all timezones [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+You can find a list of all timezones [**here**](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
-**Accepted date formatting:**
+#### Example Output
 
-- `2022-01-01`
-- `Jan 01 2022`
-- `01 Jan 2022`
-- `Jan 1st 2022`
-- `1st Jan 2022`
+* `$(countdown 2030-01-01 00:00:00)` *(January 1st, 2030 UTC)*
 
-**Accepted time formatting:**
+    ```
+    7 years, 11 months, 14 days and 9 hours
+    ```
 
-- `14:00:00`
-- `02:00:00PM`
+* `$(countdown Jan 01 2030 00:00:00 GMT-0400)` *(January 1st, 2030 EDT)*
+
+    ```
+    7 years, 11 months, 14 days and 13 hours
+    ```
+
+#### Error Output
+
+* In case no date string is provided, returns the following:
+
+    ```
+    [Error: No timestamp provided]
+    ```
+
+* In case an invalid date string is provided, returns the following:
+
+    ```
+    [Error: Failed to parse timestamp]
+    ```

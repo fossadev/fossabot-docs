@@ -4,137 +4,410 @@ id: user
 
 # $(user)
 
-This variable returns either the first argument in the command, or if that is unavailable, the username of the person who triggered the command, or a custom specified user (for example `$(user aiden)` would use `aiden` as the user).
+Returns a range of metadata around a (specified) user's channel that can be accessed via multiple different variable members for each unique piece of information.
 
-:::caution Timers are not supported.
+:::caution Timers are not supported!
 
-The variable will not return any value in a timer.
+Timers are executed on an interval by Fossabot itself and therefore this variable cannot be used inside of them.
+
+If your timer iterates through existing commands that use this variable, or if this variable is used in a timer response, Fossabot will return nothing in its place.
 
 :::
 
-## Example Output
+## Example Usage
 
-If you made a shoutout command:
+* A command with the name `!shoutout` and a response of the following:
 
-```
-Shout out to $(user.display_name)! Go follow them at twitch.tv/$(user.login) - they were last seen playing $(user.game)!
-```
+    ```
+    Shout out to $(user.display_name)! Go follow them at twitch.tv/$(user.login) - they were last seen playing $(user.game)!
+    ```
 
-You could use `!shoutout aiden`, which would produce this output:
-```
-Shout out to Aiden! Go follow them at twitch.tv/aiden - they were last seen playing Just Chatting! 
-```
+    If triggered by `!shoutout aiden`, could return the following response:
 
-Or, you could hardcode a user, for example `!fossabot`, which would produce this output:
+    ```
+    Shout out to Aiden! Go follow them at twitch.tv/aiden - they were last seen playing Just Chatting!
+    ```
 
-```
-Shout out to $(user.display_name fossabot)! Go follow them at twitch.tv/$(user.login fossabot) - they were last seen playing $(user.game fossabot)!
-```
+* A command with the name `!fossabot` and a response of the following:
+
+    ```
+    Shout out to $(user.display_name fossabot)! Go follow them at twitch.tv/$(user.login fossabot) - they were last seen playing $(user.game fossabot)!
+    ```
+
+    If triggered, could return the following response:
+
+    ```
+    Shout out to Fossabot! Go follow them at twitch.tv/fossabot - they were last seen playing <no game>!
+    ```
 
 ## $(user.accountage)
 
-Returns how long it has been since the user created their Twitch account.
+Returns the time that has passed since a user created their **Twitch account**.
 
-```
-4 years, 3 months and 2 days
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.accountage)`
+
+    ```
+    6 years, 9 months, 10 days
+    ```
+
+* `$(user.accountage fossabot)`
+
+    ```
+    3 years, 6 months, 6 days
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.accountsince)
 
-Returns the date that the user created their Twitch account.
+Returns the date when a user created their **Twitch account** in coordinated universal time (UTC).
 
-```
-Mon, 06 Apr 2015 23:09:03 UTC
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.accountsince)`
+
+    ```
+    Mon, 06 Apr 2015 23:09:03 UTC
+    ```
+
+* `$(user.accountsince fossabot)`
+
+    ```
+    Tue, 10 Jul 2018 20:56:46 UTC
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.display_name)
 
-Returns the uppercased version, or internationalized version of the users' username.
+Returns the same as `$(user)` and `$(touser)`, the uppercase version, or internationalized version of a user's username.
 
-```
-Aiden
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.display_name)`
+
+    ```
+    Aiden
+    ```
+
+* `$(user.display_name fossabot)`
+
+    ```
+    Fossabot
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.followers)
 
-Returns the number of followers the user has.
+Returns the current number of followers of a user.
 
-```
-5304
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.followers)`
+
+    ```
+    5305
+    ```
+
+* `$(user.followers fossabot)`
+
+    ```
+    10664
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.game)
 
-Returns the current Twitch directory the user is under.
+Returns the current Twitch directory a user is under.
 
-```
-Just Chatting
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.game)`
+
+    ```
+    Just Chatting
+    ```
+
+* `$(user.game fossabot)`
+
+    ```
+    <no game>
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.login)
 
-Returns the same as `$(user)`, the lowercase user username (otherwise known as "login").
+Returns the lowercase version of a user's username (otherwise known as *login*).
 
-```
-aiden
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.login)`
+
+    ```
+    aiden
+    ```
+
+* `$(user.login fossabot)`
+
+    ```
+    fossabot
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.provider)
 
-The platform that the message was sent from.
+Returns the platform a user sent the message from (i.e. twitch).
 
-```
-twitch
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.provider)`
+
+    ```
+    twitch
+    ```
+
+* `$(user.provider fossabot)`
+
+    ```
+    twitch
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.provider_id)
 
-The users' platform ID that the message was sent from.
+Returns the platform ID (e.g. the Twitch ID) of a user.
 
-```
-87763385
-```
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.provider_id)`
+
+    ```
+    87763385
+    ```
+
+* `$(user.provider_id fossabot)`
+
+    ```
+    237719657
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.title)
 
-Returns the current title on the users' Twitch channel.
+Returns the current stream title of a user's Twitch channel.
 
-```
-Welcome to my stream!
-```
+#### Parameters
 
-## $(user.viewers)
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
-Returns the current number of viewers the user has on their stream.
+#### Example Output
 
-If they are live:
-```
-24
-```
+* `$(user.title)`
 
-If they are offline:
-```
-[Error: Stream is offline.]
-```
+    ```
+    Welcome to my stream!
+    ```
 
-## $(user.views)
+* `$(user.title fossabot)`
 
-Returns the total number of channel profile views that the user has.
+    ```
+    Go to fossabot.com to add me to your stream!
+    ```
 
-```
-50463
-```
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
 
 ## $(user.uptime)
 
-Returns how long the user has been streaming for.
+Returns the time that has passed since a user's stream has gone live.
 
-If they are live:
-```
-3 hours and 2 minutes
-```
+#### Parameters
 
-If they are offline:
-```
-[Error: Stream is offline.]
-```
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.uptime)`
+
+    ```
+    3 hours and 25 minutes
+    ```
+
+* `$(user.uptime fossabot)`
+
+    ```
+    12 hours and 2 minutes
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
+
+* In case a user's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+    ```
+
+## $(user.viewers)
+
+Returns the current number of viewers watching the stream of a user.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.viewers)`
+
+    ```
+    36
+    ```
+
+* `$(user.viewers fossabot)`
+
+    ```
+    46
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
+
+* In case a user's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+    ```
+
+## $(user.views)
+
+Returns the total number of views that a user has on their profile page.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.views)`
+
+    ```
+    50463
+    ```
+
+* `$(user.views fossabot)`
+
+    ```
+    105046
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
