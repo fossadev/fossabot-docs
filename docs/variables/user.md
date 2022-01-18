@@ -6,11 +6,11 @@ id: user
 
 Returns a range of metadata around a (specified) user's channel that can be accessed via multiple different variable members for each unique piece of information.
 
-:::caution Timers are not supported!
+:::info This variable behaves different when used inside of timers!
 
-Timers are executed on an interval by Fossabot itself and therefore this variable cannot be used inside of them.
+Timers are executed on an interval by Fossabot itself and therefore this variable behaves different when used inside of one.
 
-If your timer iterates through existing commands that use this variable, or if this variable is used in a timer response, Fossabot will return nothing in its place.
+If you want to use it with a timer, a valid Twitch username **must** be provided as the first parameter or Fossabot will return nothing in its place.
 
 :::
 
@@ -38,6 +38,36 @@ If your timer iterates through existing commands that use this variable, or if t
 
     ```
     Shout out to Fossabot! Go follow them at twitch.tv/fossabot - they were last seen playing <no game>!
+    ```
+
+## $(user)
+
+Returns the same as `$(user.display_name)` and `$(touser)`, the uppercase version, or internationalized version of a user's username.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user)`
+
+    ```
+    Aiden
+    ```
+
+* `$(user fossabot)`
+
+    ```
+    Fossabot
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
     ```
 
 ## $(user.accountage)
@@ -348,7 +378,7 @@ This variable takes **one** *optional* parameter that is a Twitch username of wh
 
 ## $(user.viewers)
 
-Returns the current number of viewers watching the stream of a user.
+Returns the current number of viewers watching a user's stream.
 
 #### Parameters
 

@@ -8,7 +8,7 @@ Returns the time that has passed since a user's stream has gone offline.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the downtime of. Defaults to the sender's username if not provided.
+This variable does not take any parameters.
 
 #### Example Output
 
@@ -16,12 +16,6 @@ This variable takes **one** *optional* parameter that is a Twitch username of wh
 
     ```
     3 hours and 25 minutes
-    ```
-
-* `$(downtime fossabot)`
-
-    ```
-    12 hours and 2 minutes
     ```
 
 #### Error Output
@@ -32,7 +26,7 @@ This variable takes **one** *optional* parameter that is a Twitch username of wh
     [Error: Stream is live.]
     ```
 
-* In case a users's stream has never been live before, returns the following:
+* In case a user's stream has never been live while Fossabot was in their chat, returns the following:
 
     ```
     [Error: User has no recorded downtime yet.]

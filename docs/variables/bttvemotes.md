@@ -32,7 +32,7 @@ This variable takes ***one*** *optional* parameter that is a Twitch username of 
 
 #### Error Output
 
-* In case a user has no currently enabled BTTV emotes, or cannot be found, returns the following:
+* In case a user has no currently enabled BTTV emotes, returns the following:
 
     ```
     [Error: BetterTTV API returned an error.]
@@ -42,4 +42,10 @@ This variable takes ***one*** *optional* parameter that is a Twitch username of 
 
     ```
     [Error: Twitch API returned an error.]
+    ```
+
+* In case a user cannot be found, or is otherwise unavailable, returns the following:
+
+    ```
+    [Error: User not found.]
     ```

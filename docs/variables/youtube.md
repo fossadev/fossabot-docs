@@ -4,7 +4,7 @@ id: youtube
 
 # $(youtube)
 
-Returns the latest YouTube video of a channel or the first YouTube video in a playlist.
+Returns the latest YouTube video of a channel or a playlist.
 
 #### Parameters
 
@@ -27,7 +27,7 @@ This variable takes **one** *required* parameter that is a either a **channel na
 * `$(youtube playlist=PLKeR9CeyAc9brDTtmz6DcCQpy5mA6m9AK)`
 
     ```
-    xQc GTA Roleplay Server NoPixel 3.0 | Episode 1 - https://youtu.be/M6dorxRzp-0
+    You Wont Believe This Great Escape - https://youtu.be/6nXBfJ3ZGE4 
     ```
 
 #### Error Output

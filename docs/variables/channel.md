@@ -6,6 +6,22 @@ id: channel
 
 Returns a range of metadata around a broadcaster's channel that can be accessed via multiple different variable members for each unique piece of information.
 
+## $(channel)
+
+Returns the same as `$(channel.login)`, the lowercase version of a broadcaster's username (otherwise known as *login*).
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel)`
+
+    ```
+    fossabot
+    ```
+
 ## $(channel.accountage)
 
 Returns the time that has passed since a broadcaster created their **Twitch account**.
@@ -160,9 +176,9 @@ This variable does not take any parameters.
     fossabot
     ```
 
-## $(channel.subcount)
+## $(channel.subscribers)
 
-Returns the current number of [**subscribed users**](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) of a broadcaster.
+Returns the current number of users [**subscribed**](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) to a broadcaster.
 
 #### Parameters
 
@@ -170,7 +186,7 @@ This variable does not take any parameters.
 
 #### Example Output
 
-* `$(channel.subcount)`
+* `$(channel.subscribers)`
 
     ```
     36
@@ -218,7 +234,7 @@ This variable does not take any parameters.
 
 ## $(channel.viewers)
 
-Returns the current number of viewers watching the stream of a broadcaster.
+Returns the current number of viewers watching a broadcaster's stream.
 
 #### Parameters
 

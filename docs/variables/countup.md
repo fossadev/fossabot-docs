@@ -1,29 +1,29 @@
 ---
-id: countdown
+id: countup
 ---
 
-# $(countdown)
+# $(countup)
 
-Returns the time that is left until a specified date.
+Returns the time that has passed since a specified date.
 
-:::info This variables shares the same behavior with $(countup)!
+:::info This variables shares the same behavior with $(countdown)!
 
-Both `$(countdown)` and `$(countup)` work the exact same way and only coexist for syntactic sugar.
+Both `$(countup)` and `$(countdown)` work the exact same way and only coexist for syntactic sugar.
 
-If you provide a date **in the future**, they will both return the time that **is left** until then, but if you provide a date **in the past** instead, they both will return the time that **has passed** since then.
+If you provide a date **in the past**, they both will return the time that **has passed** since then, but if you provide a date **in the future** instead, they will both return the time that **is left** until then.
 
 :::
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a date string to count down to.
+This variable takes ***one*** *required* parameter that is a date string to count up from.
 
 * **Accepted Date Formats**
-  * `2030-01-01`
-  * `Jan 01 2030`
-  * `01 Jan 2030`
-  * `Jan 1st 2030`
-  * `1st Jan 2030`
+  * `2022-01-01`
+  * `Jan 01 2022`
+  * `01 Jan 2022`
+  * `Jan 1st 2022`
+  * `1st Jan 2022`
   * ...
 
 * **Accepted Time Formats**
@@ -39,16 +39,16 @@ If you would like to specify a different timezone than coordinated universal tim
 
 #### Example Output
 
-* `$(countdown 2030-01-01 00:00:00)` *(January 1st, 2030 UTC)*
+* `$(countup 2022-01-01 00:00:00)` *(January 1st, 2022 UTC)*
 
     ```
-    7 years, 11 months, 14 days and 9 hours
+    17 days, 13 hours and 15 minutes
     ```
 
-* `$(countdown Jan 01 2030 00:00:00 GMT-0400)` *(January 1st, 2030 EDT)*
+* `$(countup Jan 01 2022 00:00:00 GMT-0400)` *(January 1st, 2022 EDT)*
 
     ```
-    7 years, 11 months, 14 days and 13 hours
+    17 days, 9 hours and 15 minutes 
     ```
 
 #### Error Output

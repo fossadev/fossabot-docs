@@ -40,16 +40,16 @@ We recommended that you include a key query parameter or something else to authe
 
 These headers are present in **all** requests.
 
-|              Name               |                                        Value                                         |
-| :-----------------------------: | :----------------------------------------------------------------------------------: |
-|     `x-fossabot-channelid`      |                   The internal **Fossabot ID** of a broadcaster.                     |
-| `x-fossabot-channeldisplayname` |   The uppercase version, or internationalized version of a broadcaster's username.   |
-|    `x-fossabot-channellogin`    |   The lowercase version of a broadcaster's username (otherwise known as *login*).    |
-|    `x-fossabot-channelslug`     | The **Fossabot channel URL** of a broadcaster. Useful for linking to commands pages. |
-|  `x-fossabot-channelprovider`   |               The platform the request was sent from (e.g. `twitch`).                |
-| `x-fossabot-channelproviderid`  |                The platform ID (e.g. the Twitch ID) of a broadcaster.                |
-|     `x-fossabot-hasmessage`     | `true` or `false` depending on whether a message sent this (`false` if timer, etc).  |
-|          `user-agent`           |                                `Fossabot Web Proxy`                                  |
+|              Name               |                                             Value                                                |
+| :-----------------------------: | :----------------------------------------------------------------------------------------------: |
+|     `x-fossabot-channelid`      |                          The internal **Fossabot ID** of a broadcaster.                          |
+| `x-fossabot-channeldisplayname` |        The uppercase version, or internationalized version of a broadcaster's username.          |
+|    `x-fossabot-channellogin`    |         The lowercase version of a broadcaster's username (otherwise known as *login*).          |
+|    `x-fossabot-channelslug`     |       The **Fossabot channel URL** of a broadcaster. Useful for linking to commands pages.       |
+|  `x-fossabot-channelprovider`   |                     The platform the request was sent from (e.g. `twitch`).                      |
+| `x-fossabot-channelproviderid`  |                      The platform ID (e.g. the Twitch ID) of a broadcaster.                      |
+|     `x-fossabot-hasmessage`     | `true` or `false` depending on whether a message triggered this request (`false` if timer, etc). |
+|          `user-agent`           |                                      `Fossabot Web Proxy`                                        |
 
 ### List of Message Headers
 

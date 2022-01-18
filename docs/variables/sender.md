@@ -14,6 +14,22 @@ If your timer iterates through existing commands that use this variable, or if t
 
 :::
 
+## $(sender)
+
+Returns the same as `$(sender.display_name)`, the uppercase version, or internationalized version of the sender's username.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender)`
+
+    ```
+    Aiden
+    ```
+
 ## $(sender.accountage)
 
 Returns the time that has passed since the sender created their **Twitch account**.
@@ -184,7 +200,7 @@ This variable does not take any parameters.
 
 ## $(sender.viewers)
 
-Returns the current number of viewers watching the stream of the sender.
+Returns the current number of viewers watching the sender's stream.
 
 #### Parameters
 
