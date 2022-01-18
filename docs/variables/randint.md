@@ -4,10 +4,24 @@ id: randint
 
 # $(randint)
 
-Generate a random integer between two bounds.
+Returns a random number between two bounds.
 
-This variable has two required arguments, that being the lower and upper bound that Fossabot can generate the number between, for example `$(randint 1 5)`:
+#### Parameters
 
-```
-4
-```
+This variable takes ***two*** *required* parameters. The **first** parameter is the **lower** bound, and the **second** parameter is the **upper** bound of which a random number is generated in-between.
+
+#### Example Output
+
+* `$(randint 1 5)`
+
+    ```
+    3
+    ```
+
+#### Error Output
+
+* In case an incorrect number of parameters is provided, returns the following:
+
+    ```
+    [Error: Usage: $(randint 1 30)]
+    ```

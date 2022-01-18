@@ -4,10 +4,24 @@ id: rngphrase
 
 # $(rngphrase)
 
-Picks a random phrase from a comma separated list.
+Returns a random phrase from a specified list of phrases.
 
-This variable has one required argument, that being the comma separated list of phrases, spaces are accepted, for example `$(rngphrase Kappa,Keepo,PogChamp)`:
+#### Parameters
 
-```
-Keepo
-```
+This variable takes **one** *required* parameter that is a comma separated list of phrases (spaces are accepted).
+
+#### Example Output
+
+* `$(rngphrase Kappa,Keepo,PogChamp)`
+
+    ```
+    Keepo
+    ```
+
+#### Error Output
+
+* If no list of phrases is provided, returns the following:
+
+    ```
+    [Error: Must provide arguments.]
+    ```

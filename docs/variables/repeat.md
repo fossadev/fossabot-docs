@@ -4,16 +4,24 @@ id: repeat
 
 # $(repeat)
 
-Repeats something you specify in arguments an arbitrary amount of times, with spaces in-between.
+Returns a specified phrase an arbitrary amount of times with spaces in-between.
 
-Two arguments are required, the syntax is `$(repeat <amount> <content>)`, therefore:
+#### Parameters
 
-```
-$(repeat 5 PogChamp Kappa)
-```
+This variable takes ***two*** *required* parameters. The **first** parameter is **how often** the following phrase should be repeated, and the **second** parameter is the **actual phrase** that should be repeated.
 
-would produce:
+#### Example Output
 
-```
-PogChamp Kappa PogChamp Kappa PogChamp Kappa PogChamp Kappa PogChamp Kappa
-```
+* `$(repeat 5 PogChamp Kappa)`
+
+    ```
+    PogChamp Kappa PogChamp Kappa PogChamp Kappa PogChamp Kappa PogChamp Kappa
+    ```
+
+#### Error Output
+
+* In case an incorrect number of parameters is provided, returns the following:
+
+    ```
+    [Error: Usage: $(repeat 6 Phrase)]
+    ```

@@ -4,22 +4,22 @@ id: urldecode
 
 # $(urldecode)
 
-:::info This can be inconsistent with some programming languages.
+Returns a decoded version of a URL encoded string.
 
-The parsing for how queries are escaped/unescaped is often dependent on the programming language. Fossabot is written in Go and uses the native query encoder/decoders, so refer to [their docs](https://pkg.go.dev/net/url#QueryEscape) if you see inconsistencies.
+:::info The parsing for how queries are escaped/unescaped is often dependent on the programming language.
+
+Fossabot is written in Go and uses the native query encoder/decoders. Please refer to the [**Go documentation**](https://pkg.go.dev/net/url#QueryEscape) if you come across any inconsistencies.
 
 :::
 
-Encodes the passed argument for URL queries.
+#### Parameters
 
-For example,
+This variable takes ***one*** *required* parameter that is an encoded string that is supposed to be decoded.
 
-```
-$(urldecode my+example+message)
-```
+#### Example Output
 
-would output:
+* `$(urldecode my+example+string)`
 
-```
-my custom message
-```
+    ```
+    my example string
+    ```

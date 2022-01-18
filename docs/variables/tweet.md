@@ -4,12 +4,24 @@ id: tweet
 
 # $(tweet)
 
-Returns the latest tweet from a Twitter account you specify.
+Returns the latest tweet as well as the time that has passed since it was tweeted from a specified Twitter account.
 
-This variable requires one parameter, that is the twitter handle of the user you are querying the latest tweet from.
+#### Parameters
 
-For example, `$(tweet fossabot)` may return:
+This variable takes ***one*** *required* parameter that is a Twitter handle of who to fetch the most recent tweet of.
 
-```
-HeyGuys - https://twitter.com/Fossabot/status/1021723904577089536 | 1 hour and 43 minutes ago
-```
+#### Example Output
+
+* `$(tweet fossabot)`
+
+    ```
+    HeyGuys - https://twitter.com/Fossabot/status/1021723904577089536 | 1 hour and 43 minutes ago
+    ```
+
+#### Error Output
+
+* In case no handle is provided, or the handle is invalid, returns the following:
+
+    ```
+    [Error: User not found.]
+    ```
