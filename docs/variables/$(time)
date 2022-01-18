@@ -1,0 +1,20 @@
+$(time)
+
+Grabs the current local time for the Time Zone you specify
+
+Parameters
+This variable requires one variable, the time zone. If you specify an invalid time zone, the command will default to UTC. 
+
+Example Output: 
+
+$(time America/Los_Angeles)
+
+Example Response: 15:11:04 (PST)
+
+Error Output: 
+
+$(time Austraya)
+
+Error Response: 18:02:44 (UTC)
+
+List of Time Zones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
