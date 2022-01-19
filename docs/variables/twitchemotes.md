@@ -14,7 +14,7 @@ The maximum length of the output may cause not all currently available subscribe
 
 #### Parameters
 
-This variable takes ***one*** *optional* parameter that is a Twitch username of who to fetch a list of all currently available subscriber emotes of. Defaults to the broadcaster's username if not provided.
+This variable takes ***one*** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently available subscriber emotes of. Defaults to the current broadcaster's username if not provided.
 
 #### Example Output
 
@@ -41,7 +41,7 @@ This variable takes ***one*** *optional* parameter that is a Twitch username of 
 * In case a user cannot be found, returns the following:
 
     ```
-    [Error: User not found]
+    [Error: User not found.]
     ```
 
 * In case an invalid username is provided, returns the following:

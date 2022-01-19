@@ -4,7 +4,7 @@ id: botuptime
 
 # $(botuptime)
 
-Returns the uptime of the current channel's Fossabot shard.
+Returns the uptime of the current broadcaster's Fossabot shard.
 
 :::info
 

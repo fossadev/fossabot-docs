@@ -23,5 +23,5 @@ This variable takes ***two*** *required* parameters. The **first** parameter is 
 * In case an incorrect number of parameters is provided, returns the following:
 
     ```
-    [Error: Usage: $(repeat 6 Phrase)]
+    [Error: Usage: $(repeat 6 Phrase).]
     ```

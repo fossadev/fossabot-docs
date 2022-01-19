@@ -8,7 +8,7 @@ Returns weather data for a specified location.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a location of which to fetch the weather of.
+This variable takes **one** *required* parameter that is a **location** of which to fetch the weather of.
 
 #### Example Output
 
