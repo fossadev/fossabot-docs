@@ -8,7 +8,7 @@ Returns the time that has passed since a user followed a broadcaster.
 
 #### Parameters
 
-This variable takes ***two*** *optional* parameters. The **first** parameter is a **Twitch username** of a ***user*** who to fetch the follow age **of**, and the **second** parameter is a **Twitch username** of a ***broadcaster*** who to fetch the follow age **to**.
+This variable takes **two** *optional* parameters. The **first** parameter is a **Twitch username** of a ***user*** who to fetch the follow age **of**, and the **second** parameter is a **Twitch username** of a ***broadcaster*** who to fetch the follow age **to**.
 
 #### Example Output
 

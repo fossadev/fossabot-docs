@@ -8,7 +8,7 @@ Returns the current [**League of Legends**](https://leagueoflegends.com) league 
 
 #### Parameters
 
-This variable takes ***two*** *required* parameters. The **first** parameter is the **account region** of a summoner, and the **second** parameter is the **public name** of a summoner.
+This variable takes **two** *required* parameters. The **first** parameter is the **account region** of a summoner, and the **second** parameter is the **public name** of a summoner.
 
 * **Accepted Account Regions**
   * `br` - *(Brazil)*

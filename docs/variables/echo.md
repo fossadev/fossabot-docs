@@ -8,7 +8,7 @@ Returns the value that is specified in the first variable parameter.
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a **value** to be returned.
+This variable takes **one** *required* parameter that is a **value** to be returned.
 
 #### Example Output
 

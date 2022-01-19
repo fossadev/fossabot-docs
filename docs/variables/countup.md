@@ -16,7 +16,7 @@ If you provide a date **in the past**, they both will return the time that **has
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a **date string** to count up from.
+This variable takes **one** *required* parameter that is a **date string** to count up from.
 
 * **Accepted Date Formats**
   * `2022-01-01`

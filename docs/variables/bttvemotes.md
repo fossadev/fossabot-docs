@@ -14,7 +14,7 @@ The maximum length of the output may cause not all currently enabled BTTV emotes
 
 #### Parameters
 
-This variable takes ***one*** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently enabled BTTV emotes of. Defaults to the current broadcaster's username if not provided.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently enabled BTTV emotes of. Defaults to the current broadcaster's username if not provided.
 
 #### Example Output
 

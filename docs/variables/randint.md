@@ -8,7 +8,7 @@ Returns a random number between two bounds.
 
 #### Parameters
 
-This variable takes ***two*** *required* parameters. The **first** parameter is the **lower bound**, and the **second** parameter is the **upper bound** of which a random number is generated in-between.
+This variable takes **two** *required* parameters. The **first** parameter is the **lower bound**, and the **second** parameter is the **upper bound** of which a random number is generated in-between.
 
 #### Example Output
 

@@ -14,7 +14,7 @@ Fossabot is written in Go and uses the native path encoders/decoders. Please ref
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a string that is supposed to be encoded.
+This variable takes **one** *required* parameter that is a string that is supposed to be encoded.
 
 #### Example Output
 

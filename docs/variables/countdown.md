@@ -16,7 +16,7 @@ If you provide a date **in the future**, they will both return the time that **i
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a **date string** to count down to.
+This variable takes **one** *required* parameter that is a **date string** to count down to.
 
 * **Accepted Date Formats**
   * `2030-01-01`

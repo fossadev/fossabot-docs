@@ -8,7 +8,7 @@ Returns the result of a [**math.js**](https://mathjs.org/) expression that is ex
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a **supported mathematical expression**.
+This variable takes **one** *required* parameter that is a **supported mathematical expression**.
 
 #### Example Output
 

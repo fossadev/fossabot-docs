@@ -14,7 +14,7 @@ Fossabot is written in Go and uses the native query encoders/decoders. Please re
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a **string** that is supposed to be URL encoded.
+This variable takes **one** *required* parameter that is a **string** that is supposed to be URL encoded.
 
 #### Example Output
 
