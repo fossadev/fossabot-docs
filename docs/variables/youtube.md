@@ -8,7 +8,7 @@ Returns the latest YouTube video of a channel or a playlist.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a either a **channel name**, **channel ID** or **playlist ID**.
+This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**.
 
 #### Example Output
 

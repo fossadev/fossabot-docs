@@ -8,7 +8,7 @@ Returns the latest tweet as well as the time that has passed since it was tweete
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a Twitter handle of who to fetch the most recent tweet of.
+This variable takes **one** *required* parameter that is a **Twitter handle** of who to fetch the most recent tweet of.
 
 #### Example Output
 

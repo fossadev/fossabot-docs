@@ -8,7 +8,7 @@ Returns the time that has passed since a user's stream has gone live.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the uptime of. Defaults to the sender's username if not provided.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the uptime of. Defaults to the current broadcaster's username if not provided.
 
 #### Example Output
 

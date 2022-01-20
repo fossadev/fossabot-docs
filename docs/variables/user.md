@@ -46,7 +46,7 @@ Returns the same as `$(user.display_name)` and `$(touser)`, the uppercase versio
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -76,7 +76,7 @@ Returns the time that has passed since a user created their **Twitch account**.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -106,7 +106,7 @@ Returns the date when a user created their **Twitch account** in coordinated uni
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -136,7 +136,7 @@ Returns the same as `$(user)` and `$(touser)`, the uppercase version, or interna
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -166,7 +166,7 @@ Returns the current number of followers of a user.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -196,7 +196,7 @@ Returns the current Twitch directory a user is under.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -226,7 +226,7 @@ Returns the lowercase version of a user's username (otherwise known as *login*).
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -256,7 +256,7 @@ Returns the platform a user sent the message from (i.e. twitch).
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -286,7 +286,7 @@ Returns the platform ID (e.g. the Twitch ID) of a user.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 
@@ -316,7 +316,7 @@ Returns the current stream title of a user's Twitch channel.
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a Twitch username of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
 
 #### Example Output
 

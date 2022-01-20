@@ -4,7 +4,7 @@ id: downtime
 
 # $(downtime)
 
-Returns the time that has passed since a user's stream has gone offline.
+Returns the time that has passed since a broadcaster's stream has gone offline.
 
 #### Parameters
 

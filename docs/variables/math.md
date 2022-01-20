@@ -8,7 +8,7 @@ Returns the result of a [**math.js**](https://mathjs.org/) expression that is ex
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a supported mathematical expression.
+This variable takes **one** *required* parameter that is a **supported mathematical expression**.
 
 #### Example Output
 
@@ -29,11 +29,11 @@ This variable takes ***one*** *required* parameter that is a supported mathemati
 * In case no expression is provided, returns the following:
 
     ```
-    [Error: No math provided]
+    [Error: No math provided.]
     ```
 
 * In case an invalid expression is provided, returns the following:
 
     ```
-    [Error: Math.js API returned error 400]
+    [Error: Math.js API returned error 400.]
     ```

@@ -8,7 +8,7 @@ Returns the response of a HTTP GET request to a specified URL.
 
 #### Parameters
 
-This variable takes ***one*** *required* parameter that is a URL to send the HTTP GET request to.
+This variable takes **one** *required* parameter that is a **URL** to send the HTTP GET request to.
 
 #### Example Output
 
