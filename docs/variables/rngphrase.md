@@ -8,7 +8,7 @@ Returns a random phrase from a specified list of phrases.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a **comma separated list of phrases** (spaces are accepted).
+This variable takes **one** *required* parameter that is a **comma separated list of phrases** (spaces are supported).
 
 #### Example Output
 

@@ -4,22 +4,22 @@ id: echo
 
 # $(echo)
 
-Returns the value that is specified in the first variable parameter.
+Returns the content of the sender's message.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a **value** to be returned.
+This variable does not take any parameters.
 
-#### Example Output
+## Example Usage
 
-* `$(echo hello world)`
-
-    ```
-    hello world
-    ```
-
-* `$(echo $(user))`
+* A command with the name `!verycoolname` and a response of the following:
 
     ```
-    Aiden
+    $(echo)
+    ```
+
+    If triggered by `!verycoolname look at this cool text`, would return the following response:
+
+    ```
+    !verycoolname look at this cool text
     ```

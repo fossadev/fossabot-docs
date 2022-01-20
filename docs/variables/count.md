@@ -4,7 +4,7 @@ id: count
 
 # $(count)
 
-Returns the number of times a command has been executed in a channel and optionally offers the ability to create custom counting variables.
+Returns the number of times a command or keyword has been executed in a channel, and optionally offers the ability to create custom counting variables.
 
 ## $(count.get)
 
@@ -12,9 +12,15 @@ Returns the current number that is stored in a custom counting variable.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a custom counting **variable name**. Defaults to the behavior of `$(count)` if no parameter is provided, and returns as well as increments the command usage count by `1`.
+This variable takes **one** *optional* parameter that is a custom counting **variable name**. Defaults to the behavior of `$(count)` if no parameter is provided, and returns as well as increments the command or keyword usage count by `1`.
 
 #### Example Output
+
+* `$(count.get)` *(previously stored count: 10)*
+
+    ```
+    11
+    ```
 
 * `$(count.get my-cool-variable)`
 

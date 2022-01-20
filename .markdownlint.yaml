@@ -12,9 +12,6 @@ MD014: false
 # Disabling no-duplicate-headings restriction
 MD024: false
 
-# Disabling no-trailing-punctuation in headings restriction
-MD026: false
-
 # I'm lazy, I don't wanna pad extra lines for these code blocks
 MD031: false
 

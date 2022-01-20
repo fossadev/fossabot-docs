@@ -8,7 +8,11 @@ Returns the current playing song of specified [**last.fm**](https://www.last.fm/
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a **[last.fm](https://www.last.fm/) username** of who to fetch the current playing song of.
+This variable takes **one** *required* parameter that is a **[last.fm](https://www.last.fm/) username** of who to fetch the current playing song of, and **one** *optional* parameter that is a **custom format** in which to return the song information.
+
+* **Supported Placeholders**
+  * `{songname}` - *The song's name.*
+  * `{artist}` - *The song's artist(s).*
 
 #### Example Output
 
@@ -16,6 +20,12 @@ This variable takes **one** *required* parameter that is a **[last.fm](https://w
 
     ```
     Fox Stevenson - Dreamland
+    ```
+
+* `$(lastfm aiden {songname} by {artist})`
+
+    ```
+    Dreamland by Fox Stevenson
     ```
 
 #### Error Output

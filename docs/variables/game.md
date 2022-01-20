@@ -17,6 +17,7 @@ This variable takes **one** *optional* parameter that is a **Twitch username** o
     ```
     Just Chatting
     ```
+
 * `$(game fossabot)`
 
     ```
