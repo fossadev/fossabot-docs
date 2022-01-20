@@ -1,10 +1,10 @@
 ---
-id: index
+id: indexes
 ---
 
 # $(index)
 
-Returns an arguments provided at a specified argument index following a command name.
+Returns an argument provided at a specified argument index following a command name.
 
 #### Parameters
 

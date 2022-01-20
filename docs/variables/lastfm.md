@@ -4,7 +4,7 @@ id: lastfm
 
 # $(lastfm)
 
-Returns the current playing song of specified [**last.fm**](https://www.last.fm/) profile.
+Returns the current playing song of a specified [**last.fm**](https://www.last.fm/) profile.
 
 #### Parameters
 

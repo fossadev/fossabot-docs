@@ -4,7 +4,7 @@ id: pathdecode
 
 # $(pathdecode)
 
-Returns a decoded version of a path encoded string.
+Returns a decoded version of path encoded input.
 
 :::info The parsing for how paths are escaped/unescaped is often dependent on the programming language.
 
@@ -14,7 +14,7 @@ Fossabot is written in Go and uses the native path encoders/decoders. Please ref
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is an **encoded string** that is supposed to be decoded.
+This variable takes **one** *required* parameter that is **encoded input** that is supposed to be decoded.
 
 #### Example Output
 
