@@ -4,7 +4,7 @@ id: gamesplayed
 
 # $(gamesplayed)
 
-Returns a list of recorded directories that a broadcaster's latest stream was, or current stream is under.
+Returns a list of recorded game directories that a broadcaster's latest stream was, or current stream is under.
 
 :::info This feature is managed by a custom tracking system!
 

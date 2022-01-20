@@ -4,7 +4,7 @@ id: game
 
 # $(game)
 
-Returns the current Twitch directory a broadcaster is under.
+Returns the current game directory a broadcaster is under.
 
 #### Parameters
 
