@@ -8,9 +8,21 @@ Changes the currently played game on stream.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a **game** of what to set the stream directory to.
+This variable takes **one** *optional* parameter that is a **game** of what to set the stream directory to.
 
 ## Example Usage
+
+* A command with the name `!setgame` and a response of the following:
+
+    ```
+    $(setgame)
+    ```
+
+    If triggered by `!setgame Grand Theft Auto V`, will change the stream directory to `Grand Theft Auto V` and return the following response:
+
+    ```
+    Changed game to "Grand Theft Auto V"
+    ```
 
 * A command with the name `!gta` and a response of the following:
 
@@ -21,7 +33,7 @@ This variable takes **one** *required* parameter that is a **game** of what to s
     If triggered by `!gta`, will change the stream directory to `Grand Theft Auto V` and return the following response:
 
     ```
-    @Aiden Changed game to "Grand Theft Auto V"
+    Changed game to "Grand Theft Auto V"
     ```
 
 #### Error Output

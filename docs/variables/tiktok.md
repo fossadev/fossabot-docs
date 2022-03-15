@@ -6,6 +6,12 @@ id: tiktok
 
 Returns a range of metadata around a broadcaster's latest [**TikTok**](https://www.tiktok.com/en/) video that can be accessed via multiple different placeholders.
 
+:::caution Authorization required!
+
+This variable will only function if a broadcaster has authorized and connected a TikTok account within Fossabot's dashboard under the **Integrations** tab.
+
+:::
+
 ## $(tiktok)
 
 Returns the same as `$(tiktok.video)`, the metadata around a broadcaster's latest TikTok video.
@@ -76,10 +82,10 @@ This variable takes **one** *optional* parameter that is a **custom format** in 
     Test - https://www.tiktok.com/@wallisdev/video/7063753526857485574
     ```
 
-* `$(tiktok "{title}" currently has {view_count} views, {share_count} shares and {like_count} likes.)`
+* `$(tiktok '{title}' currently has {view_count} views, {share_count} shares and {like_count} likes.)`
 
     ```
-    "Test" currently has 243 views, 11 shares and 62 likes.
+    'Test' currently has 243 views, 11 shares and 62 likes.
     ```
 
 #### Error Output

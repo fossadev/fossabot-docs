@@ -8,9 +8,20 @@ Changes the current stream title.
 
 #### Parameters
 
-This variable takes **one** *required* parameter that is a **phrase** of what to set the stream title to.
+This variable takes **one** *optional* parameter that is a **phrase** of what to set the stream title to.
 
 ## Example Usage
+
+* A command with the name `!settitle` and a response of the following:
+
+    ```
+    $(settitle)
+    ```
+
+    If triggered by `!settitle Playing on NoPixel 3.0 today!`, will change the stream title to `Playing on NoPixel 3.0 today!` and return the following response:
+
+    ```
+    Changed title to "Playing on NoPixel 3.0 today!"
 
 * A command with the name `!gta` and a response of the following:
 
@@ -21,5 +32,13 @@ This variable takes **one** *required* parameter that is a **phrase** of what to
     If triggered by `!gta`, will change the stream title to `Playing on NoPixel 3.0 today!` and return the following response:
 
     ```
-    @Aiden Changed title to "Playing on NoPixel 3.0 today!"
+    Changed title to "Playing on NoPixel 3.0 today!"
+    ```
+
+#### Error Output
+
+* In case no title is provided, returns the following:
+
+    ```
+    [Error: No title provided.]
     ```
