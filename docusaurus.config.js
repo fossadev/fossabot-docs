@@ -21,7 +21,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/fossadev/fossabot-docs/edit/main/website/',
+          editUrl: 'https://github.com/fossadev/fossabot-docs/edit/main/',
           routeBasePath: '/',
         },
         blog: false,
