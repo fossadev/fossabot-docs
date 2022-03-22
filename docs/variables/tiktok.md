@@ -40,10 +40,10 @@ This variable takes **one** *optional* parameter that is a **custom format** in 
     Test - https://www.tiktok.com/@wallisdev/video/7063753526857485574
     ```
 
-* `$(tiktok.video "{title}" currently has {view_count} views, {share_count} shares and {like_count} likes.)`
+* `$(tiktok.video '{title}' currently has {view_count} views, {share_count} shares and {like_count} likes.)`
 
     ```
-    "Test" currently has 243 views, 11 shares and 62 likes.
+    'Test' currently has 243 views, 11 shares and 62 likes.
     ```
 
 #### Error Output
