@@ -1,6 +1,5 @@
 ---
 id: phrase-groups
-title: Phrase Groups
 slug: /keywords/phrase-groups
 ---
 

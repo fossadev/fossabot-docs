@@ -1,6 +1,5 @@
 ---
 id: autoreason
-title: $(autoreason)
 slug: /keywords/autoreason
 ---
 
