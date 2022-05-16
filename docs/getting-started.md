@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Getting Started
 
-Getting started is easy with Fossabot, simply head to [beta.fossabot.com](https://beta.fossabot.com) and click "Log In". You will be taken to an authorization screen from Twitch:
+Getting started is easy with Fossabot, simply head to [fossabot.com](https://fossabot.com) and click "Log In". You will be taken to an authorization screen from Twitch:
 
 ![Twitch authorization screen - Top of page](/img/docs/getting-started/twitch-auth-top.png)
 
