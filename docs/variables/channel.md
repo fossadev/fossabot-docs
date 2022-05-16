@@ -73,7 +73,7 @@ This variable does not take any parameters.
 #### Error Output
 
 * In case the channels' bio is empty/not set, returns the following:
-    
+
     ```
     <empty>
     ```

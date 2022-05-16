@@ -81,7 +81,7 @@ This variable does not take any parameters.
 #### Error Output
 
 * In case the senders' bio is empty/not set, returns the following:
-    
+
     ```
     <empty>
     ```

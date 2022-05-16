@@ -153,7 +153,7 @@ This variable takes **one** *optional* parameter that is a **Twitch username** o
     ```
 
 * In case the users' bio is empty/not set, returns the following:
-    
+
     ```
     <empty>
     ```
