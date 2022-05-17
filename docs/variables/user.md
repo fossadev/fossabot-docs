@@ -122,12 +122,40 @@ This variable takes **one** *optional* parameter that is a **Twitch username** o
     Tue, 10 Jul 2018 20:56:46 UTC
     ```
 
+## $(user.bio)
+
+Returns the [Twitch bio](https://help.twitch.tv/s/article/channel-page-setup#Bio) a user has set on their channel.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.bio)`
+
+    ```
+    Welcome to my channel!
+    ```
+
+* `$(user.bio fossabot)`
+
+    ```
+    Fossabot is a Twitch chat bot that has all the features you need to create the ultimate chat experience for yourself and your audience. Built by the community, for the community.
+    ```
+
 #### Error Output
 
 * In case an invalid username is provided, returns the following:
 
     ```
     [Error: Invalid username.]
+    ```
+
+* In case the users' bio is empty/not set, returns the following:
+
+    ```
+    <empty>
     ```
 
 ## $(user.display_name)

@@ -62,6 +62,30 @@ This variable does not take any parameters.
     Mon, 06 Apr 2015 23:09:03 UTC
     ```
 
+## $(sender.bio)
+
+Returns the [Twitch bio](https://help.twitch.tv/s/article/channel-page-setup#Bio) of the sender.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.bio)`
+
+    ```
+    Fossabot is a Twitch chat bot that has all the features you need to create the ultimate chat experience for yourself and your audience. Built by the community, for the community.
+    ```
+
+#### Error Output
+
+* In case the senders' bio is empty/not set, returns the following:
+
+    ```
+    <empty>
+    ```
+
 ## $(sender.display_name)
 
 Returns the same as `$(sender)`, the uppercase version, or internationalized version of the sender's username.
