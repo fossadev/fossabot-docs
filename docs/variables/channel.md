@@ -64,7 +64,7 @@ This variable does not take any parameters.
 
 #### Example Output
 
-* `$(sender.bio)`
+* `$(channel.bio)`
 
     ```
     Fossabot is a Twitch chat bot that has all the features you need to create the ultimate chat experience for yourself and your audience. Built by the community, for the community.
