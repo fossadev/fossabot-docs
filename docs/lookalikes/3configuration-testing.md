@@ -11,7 +11,7 @@ The configuration tester is a simple way to test against all installed (and enab
 
 ## Ensure Lookalikes are Installed
 
-The currently installed and enabled lookalikes on my channel for this test is `wigglez_morse`, `wigglez_braille`, and `wigglez_global`.
+The currently installed and enabled lookalikes on my channel for this test are `wigglez_morse`, `wigglez_braille`, and `wigglez_global`.
 
 ## Enter a Test Phrase
 
