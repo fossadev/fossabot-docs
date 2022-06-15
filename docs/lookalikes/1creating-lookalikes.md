@@ -31,7 +31,7 @@ The `ID` is used for adding this lookalike to your channel (or even remote chann
 
 ### Make this Lookalike Public
 
-`Make this lookalike public` will allow people to use this lookalike on their channel or preset. If this is disabled (which it is by default), only the channel or preset that created it will have the ability to install it. **A public lookalike does not mean people have modification or viewable privilege to your Phrase Groups and phrase entries!**
+`Make this lookalike public` will allow people to use this lookalike on their channel or preset. If this is disabled (which it is by default), only the channel or preset that created it will have the ability to install it. **A public lookalike does NOT mean that people have view or edit rights for your Phrase Groups and phrase entries!**
 
 ![lookalike creation example2](../../static/img/lookalikes/creating-lookalike-step-2.png)
 
@@ -63,11 +63,11 @@ Each `Phrase Group` box is or has:
 
 - a `...` menu, where you can:
 
-  - Sort phrases
+  - `Sort phrases`
   
-  - Copy to clipboard (for easy pasting, such as a Google sheet for backup purposes)
+  - `Copy to clipboard`(for easy pasting, such as a Google sheet for backup purposes)
   
-  - Delete phrase group, which does exactly what it sounds like. The selected `Phrase Group` will be deleted. A confirmation box will appear to prevent accidental removal.
+  - `Delete phrase group`, which does exactly what it sounds like. The selected `Phrase Group` will be deleted. A confirmation box will appear to prevent accidental removal.
   
 - an expand button, to open or hide the `Phrase Group`
 
