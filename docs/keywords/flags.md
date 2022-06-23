@@ -55,6 +55,8 @@ If you define other flags on the phrase, they will be ignored.
 
 Instructs Fossabot to reference your keyword variable for defining the properties of a given phrase. The content of a keyword must be the variable key.
 
+For more information on variables, check out our [variables documentation](/keywords/variables).
+
 ### Example
 
 For a variable, that has a key of `myKey`:
