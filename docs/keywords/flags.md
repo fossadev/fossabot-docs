@@ -9,6 +9,8 @@ Flags are chainable properties that are applied at the beginning of a phrase. Th
 
 For example, given the phrase `foobar`, in order to make this phrase use regex, it would become `regex:foobar`. If the phrase should also be case-sensitive, and use regex, then the phrase should be `regex:sensitive:foobar`. The order in which you chain flags is irrelevant to how Fossabot parses the phrase, as long as they all exist **before** the phrase content.
 
+The only flag which does **not** support functionality from other flags, is [var](#var).
+
 ## regex
 
 :::info Your regex must be compatible with the [RE2](https://github.com/google/re2) regex engine!
@@ -42,3 +44,21 @@ For example, if you had a phrase group with the phrase `test`, and a message wit
 ### Example
 
 `negative:foobar`
+
+## var
+
+:::info All other flags are ignored when using `var:`.
+
+If you define other flags on the phrase, they will be ignored.
+
+:::
+
+Instructs Fossabot to reference your keyword variable for defining the properties of a given phrase. The content of a keyword must be the variable key.
+
+For more information on variables, check out our [variables documentation](/keywords/variables).
+
+### Example
+
+For a variable, that has a key of `myKey`:
+
+`var:myKey`
