@@ -19,7 +19,7 @@ For example, the below keyword phrase group will *not* work if I delete the vari
 
 Variables provide a way for you to define common phrases within multiple keywords. By using the `var:` flag on a phrase, it will reference the stored variable value when parsing your keyword phrase.
 
-For example, lets define a variable with a key of `myKey`, and has a value of `regex:abc(123)?`:
+For example, lets define a variable with a key of `myKey`, and a value of `regex:abc(123)?`:
 
 ![Variable creation modal](../../static/img/keywords/create-variable.png)
 
