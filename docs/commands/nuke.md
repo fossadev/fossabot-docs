@@ -26,7 +26,7 @@ This variable takes no parameters.
 
 ## Example usage
 
-### Standard match with timeouts 
+### Standard match with timeouts
 
 ```
 !nuke my bad phrase 3m 10m
