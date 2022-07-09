@@ -1,8 +1,8 @@
 # Fossabot Docs
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/42138592-e5d9-471e-8d93-9ccecbfa6800/deploy-status)](https://app.netlify.com/sites/fossabot-docs/deploys)
+![Cloudflare Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fcloudflare-pages-badges.wallis.workers.dev%2F%3FprojectName%3Dfossabot-docs) [![Markdown linting](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml/badge.svg)](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml)
 
-> The official public Fossabot documentation, hosted at [docs.fossa.bot](https://docs.fossa.bot).
+> The official public Fossabot documentation, hosted at [docs.fossabot.com](https://docs.fossabot.com).
 
 ## Feedback
 
