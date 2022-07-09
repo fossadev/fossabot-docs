@@ -1,6 +1,6 @@
 # Fossabot Docs
 
-![Cloudflare Status](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fcloudflare-pages-badges.wallis.workers.dev%2F%3FprojectName%3Dfossabot-docs) ![Lint status](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-linting.yaml/badge.svg)
+![Cloudflare Status](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fcloudflare-pages-badges.wallis.workers.dev%2F%3FprojectName%3Dfossabot-docs) [![Markdown linting](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml/badge.svg)](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml)
 
 > The official public Fossabot documentation, hosted at [docs.fossabot.com](https://docs.fossabot.com).
 
