@@ -8,7 +8,7 @@ Returns the parsed variable response from a custom command.
 
 :::info Recursive `$(references)` invocations are blocked!
 
-You may not call a `$(references)` variable within another `$(references)` variable. This is to prevent service abuse.
+You may not call a `$(references)` variable from within another `$(references)` variable. This is to prevent service abuse.
 
 :::
 
@@ -18,7 +18,7 @@ This variable takes **one** *required* parameter that is the **name** of a custo
 
 #### Example Output
 
-Assuming a command of `!hello` exists, with a response of `Hello $(user)!`, and the name of the user invoking the command is `Fossabot`.
+Assuming an existing command of `!hello` with a response of `Hello $(user)!`, if invoked by the user `Fossabot`:
 
 * `$(references hello)`
 
@@ -31,7 +31,7 @@ Assuming a command of `!hello` exists, with a response of `Hello $(user)!`, and 
 * In case a custom command does not exist:
 
     ```
-    [Error: Command not found]
+    [Error: Command not found.]
     ```
 
 * In case a command is not specified in the arguments:
