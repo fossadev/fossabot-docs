@@ -103,7 +103,7 @@ A valid token will result in HTTP status code `200` with the following body:
 
 ```
 {
- "context_url": "https://api.fossabot.com/v2/customapi/context/<token>"
+    "context_url": "https://api.fossabot.com/v2/customapi/context/<token>"
 }
 ```
 
@@ -115,10 +115,10 @@ An invalid token will return HTTP status code `400` with the following body:
 
 ```
 {
- "code": "token_invalid",
- "error": "Bad Request",
- "message": "Invalid token",
- "status": 400
+    "code": "token_invalid",
+    "error": "Bad Request",
+    "message": "Invalid token",
+    "status": 400
 }
 ```
 
@@ -134,56 +134,56 @@ A valid token will return HTTP status code `200` with the following body:
 
 ```
 {
- "channel": {
-  "id": "1",
-  "login": "aiden",
-  "display_name": "Aiden",
-  "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/aiden-profile_image-6d03ccc5d668cc80-300x300.jpeg",
-  "slug": "aiden",
-  "broadcaster_type": "affiliate",
-  "provider": "twitch",
-  "provider_id": "87763385",
-  "created_at": "2021-07-10T04:20:05.599789Z",
-  "stream_timestamp": "2022-09-17T19:17:27Z",
-  "is_live": true
- },
- "message": {
-  "id": "ae9a4e3e-d495-4d75-aec6-8965e7c4ccd0",
-  "content": "!testcommand",
-  "provider": "twitch",
-  "user": {
-   "provider_id": "87763385",
-   "login": "aiden",
-   "display_name": "Aiden",
-   "roles": [
-    {
-     "id": "1",
-     "name": "Broadcaster",
-     "type": "broadcaster"
+    "channel": {
+        "id": "1",
+        "login": "aiden",
+        "display_name": "Aiden",
+        "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/aiden-profile_image-6d03ccc5d668cc80-300x300.jpeg",
+        "slug": "aiden",
+        "broadcaster_type": "affiliate",
+        "provider": "twitch",
+        "provider_id": "87763385",
+        "created_at": "2021-07-10T04:20:05.599789Z",
+        "stream_timestamp": "2022-09-17T19:17:27Z",
+        "is_live": true
     },
-    {
-     "id": "3",
-     "name": "Moderator",
-     "type": "moderator"
-    },
-    {
-     "id": "5",
-     "name": "Subscriber",
-     "type": "subscriber"
-    },
-    {
-     "id": "269",
-     "name": "test",
-     "type": "custom"
-    },
-    {
-     "id": "14",
-     "name": "Admin",
-     "type": "custom"
+    "message": {
+        "id": "ae9a4e3e-d495-4d75-aec6-8965e7c4ccd0",
+        "content": "!testcommand",
+        "provider": "twitch",
+        "user": {
+            "provider_id": "87763385",
+            "login": "aiden",
+            "display_name": "Aiden",
+            "roles": [
+                {
+                    "id": "1",
+                    "name": "Broadcaster",
+                    "type": "broadcaster"
+                },
+                {
+                    "id": "3",
+                    "name": "Moderator",
+                    "type": "moderator"
+                },
+                {
+                    "id": "5",
+                    "name": "Subscriber",
+                    "type": "subscriber"
+                },
+                {
+                    "id": "269",
+                    "name": "test",
+                    "type": "custom"
+                },
+                {
+                    "id": "14",
+                    "name": "Admin",
+                    "type": "custom"
+                }
+            ]
+        }
     }
-   ]
-  }
- }
 }
 ```
 
@@ -193,10 +193,10 @@ An invalid token will return HTTP status code `400` with the following body:
 
 ```
 {
- "code": "token_invalid",
- "error": "Bad Request",
- "message": "Invalid token",
- "status": 400
+    "code": "token_invalid",
+    "error": "Bad Request",
+    "message": "Invalid token",
+    "status": 400
 }
 ```
 
@@ -206,10 +206,10 @@ Fossabot uses a [leaky bucket ratelimiter](https://en.wikipedia.org/wiki/Leaky_b
 
 ```
 {
- "code": "ratelimit",
- "error": "Too Many Requests",
- "message": "You are being rate limited.",
- "status": 429
+    "code": "ratelimit",
+    "error": "Too Many Requests",
+    "message": "You are being rate limited.",
+    "status": 429
 }
 ```
 
