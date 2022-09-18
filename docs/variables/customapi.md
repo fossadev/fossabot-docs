@@ -132,6 +132,11 @@ GET https://api.fossabot.com/v2/customapi/context/<token>
 
 A valid token will return HTTP status code `200` with the following body:
 
+:::info `message` is a nullable field
+
+In the event the customapi request was dispatched from an automated action (such as a timer), `message` will be `null`.
+:::
+
 ```
 {
     "channel": {
