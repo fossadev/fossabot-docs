@@ -37,7 +37,7 @@ Use our [API endpoints](#api-endpoints) to validate whether a request originated
 
 Fossabot's proxy **does not** use a consistent IP range to send requests. You **cannot** rely on it for authenticating endpoints!
 
-We recommended that you use our [API Endpoints](#api-endpoints) to validate whether a given request actually came from Fossabot.
+We recommended that you use our [**API Endpoints**](#api-endpoints) to validate whether a given request actually came from Fossabot.
 
 **For that reason we do NOT print customapi URLs on public commands pages.**
 
@@ -45,18 +45,18 @@ We recommended that you use our [API Endpoints](#api-endpoints) to validate whet
 
 These headers are present in **all** requests.
 
-|              Name               |                                              Value                                               |
-| :-----------------------------: | :----------------------------------------------------------------------------------------------: |
-|     `x-fossabot-channelid`      |                          The internal **Fossabot ID** of a broadcaster.                          |
-| `x-fossabot-channeldisplayname` |         The uppercase version, or internationalized version of a broadcaster's username.         |
-|    `x-fossabot-channellogin`    |         The lowercase version of a broadcaster's username (otherwise known as _login_).          |
-|    `x-fossabot-channelslug`     |       The **Fossabot channel URL** of a broadcaster. Useful for linking to commands pages.       |
-|  `x-fossabot-channelprovider`   |                     The platform the request was sent from (e.g. `twitch`).                      |
-| `x-fossabot-channelproviderid`  |                      The platform ID (e.g. the Twitch ID) of a broadcaster.                      |
-|   `x-fossabot-customapitoken`   | Token that uniquely identifies this request. Use this with our [API endpoints](#api-endpoints).  |
-|     `x-fossabot-hasmessage`     | `true` or `false` depending on whether a message triggered this request (`false` if timer, etc). |
-|    `x-fossabot-validateurl`     |  Refer to [Validating requests](#validating-requests) for more information about this endpoint.  |
-|          `user-agent`           |                                       `Fossabot Web Proxy`                                       |
+|              Name               |                                                Value                                                 |
+| :-----------------------------: | :--------------------------------------------------------------------------------------------------: |
+|     `x-fossabot-channelid`      |                            The internal **Fossabot ID** of a broadcaster.                            |
+| `x-fossabot-channeldisplayname` |           The uppercase version, or internationalized version of a broadcaster's username.           |
+|    `x-fossabot-channellogin`    |           The lowercase version of a broadcaster's username (otherwise known as _login_).            |
+|    `x-fossabot-channelslug`     |         The **Fossabot channel URL** of a broadcaster. Useful for linking to commands pages.         |
+|  `x-fossabot-channelprovider`   |                       The platform the request was sent from (e.g. `twitch`).                        |
+| `x-fossabot-channelproviderid`  |                        The platform ID (e.g. the Twitch ID) of a broadcaster.                        |
+|   `x-fossabot-customapitoken`   | The token that uniquely identifies this request. Use this with our [API endpoints](#api-endpoints).  |
+|     `x-fossabot-hasmessage`     |   `true` or `false` depending on whether a message triggered this request (`false` if timer, etc).   |
+|    `x-fossabot-validateurl`     |    Refer to [Validating requests](#validating-requests) for more information about this endpoint.    |
+|          `user-agent`           |                                         `Fossabot Web Proxy`                                         |
 
 ### List of Message Headers
 
@@ -72,11 +72,11 @@ These headers are present in requests **sent from messages** and therefore attac
 
 ### API Endpoints
 
-Fossabot exposes two API endpoints that you may use to either validate that a given customapi request originated from Fossabot, or obtain more data that would you to customize how you respond to a given request.
+Fossabot exposes two API endpoints that you may use to either validate that a given customapi request originated from Fossabot, or to obtain more data that would allow you to customize how you respond to a given request.
 
-:::info These endpoints are ratelimited.
+:::info These endpoints are rate limited.
 
-Refer to [Ratelimits](#ratelimits) for more information.
+Refer to [**Rate Limits**](#ratelimits) for more information.
 :::
 
 :::caution Tokens expire after 60 seconds.
@@ -107,7 +107,7 @@ A valid token will result in HTTP status code `200` with the following body:
 }
 ```
 
-You may send a GET request to the value of `context_url` to obtain more data about the incoming request. Refer to [Getting context](#getting-context) for more information.
+You may send a `GET` request to the value of `context_url` to obtain more data about the incoming request. Refer to [**Getting context**](#getting-context) for more information.
 
 ##### Invalid token
 
@@ -205,9 +205,9 @@ An invalid token will return HTTP status code `400` with the following body:
 }
 ```
 
-#### Ratelimits
+#### Rate Limits
 
-Fossabot uses a [leaky bucket ratelimiter](https://en.wikipedia.org/wiki/Leaky_bucket) to protect its services from abuse. You will receive a `429` HTTP status code with the following body if you exceed the rate limit:
+Fossabot uses a **[leaky bucket](https://en.wikipedia.org/wiki/Leaky_bucket) rate limiter** to protect its services from abuse. You will receive a `429` HTTP status code with the following body if you exceed the rate limit:
 
 ```
 {
@@ -220,8 +220,8 @@ Fossabot uses a [leaky bucket ratelimiter](https://en.wikipedia.org/wiki/Leaky_b
 
 **Rate limits may change at any time.** Use the following headers to throttle your requests accordingly:
 
-|          Name           |                                               Value                                                |
-| :---------------------: | :------------------------------------------------------------------------------------------------: |
-|   `x-ratelimit-total`   |                              The total size of your ratelimit bucket                               |
-| `x-ratelimit-remaining` |                               The remaining requests in your bucket                                |
-|   `x-ratelimit-reset`   | A [unix timestamp](https://en.wikipedia.org/wiki/Unix_time) of when your bucket is fully refilled. |
+|          Name           |                                                 Value                                                   |
+| :---------------------: | :-----------------------------------------------------------------------------------------------------: |
+|   `x-ratelimit-total`   |                                The total size of your rate limit bucket.                                |
+| `x-ratelimit-remaining` |                                 The remaining requests in your bucket.                                  |
+|   `x-ratelimit-reset`   | A [unix timestamp](https://en.wikipedia.org/wiki/Unix_time) of when your bucket is completely refilled. |
