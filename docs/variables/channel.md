@@ -279,19 +279,3 @@ This variable does not take any parameters.
     ```
     [Error: Stream is offline.]
     ```
-
-## $(channel.views)
-
-Returns the total number of views that a broadcaster has on their profile page.
-
-#### Parameters
-
-This variable does not take any parameters.
-
-#### Example Output
-
-* `$(channel.views)`
-
-    ```
-    100354
-    ```
