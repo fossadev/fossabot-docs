@@ -4,17 +4,17 @@ id: ffzemotes
 
 # $(ffzemotes)
 
-Returns a list of all currently enabled FFZ emotes of a Twitch channel.
+Returns a list of all currently enabled FrankerFaceZ emotes of a Twitch channel.
 
 :::info
 
-The maximum length of the output may cause not all currently enabled FFZ emotes to be listed at all times.
+The maximum length of the output may cause not all currently enabled FrankerFaceZ emotes to be listed at all times.
 
 :::
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently enabled FFZ emotes of. Defaults to the current broadcaster's username if not provided.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently enabled FrankerFaceZ emotes of. Defaults to the current broadcaster's username if not provided.
 
 #### Example Output
 
@@ -32,7 +32,7 @@ This variable takes **one** *optional* parameter that is a **Twitch username** o
 
 #### Error Output
 
-* In case a user has no currently enabled FFZ emotes, returns the following:
+* In case a user has no currently enabled FrankerFaceZ emotes, returns the following:
 
     ```
     [Error: FrankerFaceZ API returned an error.]

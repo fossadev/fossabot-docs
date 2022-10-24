@@ -4,17 +4,17 @@ id: bttvemotes
 
 # $(bttvemotes)
 
-Returns a list of all currently enabled BTTV emotes of a Twitch channel.
+Returns a list of all currently enabled BetterTTV emotes of a Twitch channel.
 
 :::info
 
-The maximum length of the output may cause not all currently enabled BTTV emotes to be listed at all times.
+The maximum length of the output may cause not all currently enabled BetterTTV emotes to be listed at all times.
 
 :::
 
 #### Parameters
 
-This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently enabled BTTV emotes of. Defaults to the current broadcaster's username if not provided.
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch a list of all currently enabled BetterTTV emotes of. Defaults to the current broadcaster's username if not provided.
 
 #### Example Output
 
@@ -32,7 +32,7 @@ This variable takes **one** *optional* parameter that is a **Twitch username** o
 
 #### Error Output
 
-* In case a user has no currently enabled BTTV emotes, returns the following:
+* In case a user has no currently enabled BetterTTV emotes, returns the following:
 
     ```
     [Error: BetterTTV API returned an error.]
