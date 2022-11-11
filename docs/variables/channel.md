@@ -200,6 +200,29 @@ This variable does not take any parameters.
     fossabot
     ```
 
+## $(channel.stream_id)
+
+Returns the provider ID of the current live stream session.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(channel.stream_id)`
+
+    ```
+    123456789
+    ```
+
+#### Error Output
+
+* In case a broadcaster's stream is currently offline, returns the following:
+
+    ```
+    [Error: Stream is offline.]
+
 ## $(channel.subscribers)
 
 Returns the current number of users [**subscribed**](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) to a broadcaster.
