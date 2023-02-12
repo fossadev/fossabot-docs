@@ -104,7 +104,7 @@ This variable does not take any parameters.
 
 ## $(charity.progress)
 
-Returns the progress towards the current fundraising goal for the Charity campaign in the channel, as a percentage. 
+Returns the progress towards the current fundraising goal for the Charity campaign in the channel, as a percentage.
 
 **This value may exceed `100%`, allowing Fossabot to highlight the achievement of a channel exceeding their fundraising goal.**
 
