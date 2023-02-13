@@ -4,11 +4,11 @@ id: charity
 
 # $(charity)
 
-Returns a range of metadata around the currently running [Twitch Charity](https://dashboard.twitch.tv/charity) campaign in the channel.
+Returns a range of metadata around the currently running [Twitch Charity](https://dashboard.twitch.tv/charity) campaign on a broadcaster's channel.
 
 ## $(charity)
 
-An alias for combining many charity variables together in the following format: `$(charity.name): $(charity.description) - $(charity.website)`.
+An alias to combine many charity variables together in the following format: `$(charity.name): $(charity.description) - $(charity.website)`.
 
 #### Parameters
 
@@ -24,7 +24,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -32,7 +32,7 @@ This variable does not take any parameters.
 
 ## $(charity.amount_raised)
 
-Returns the name of the total raised for the Charity in the current campaign that the channel is running.
+Returns the total amount raised for the charity in the current campaign that the channel is running.
 
 #### Parameters
 
@@ -48,7 +48,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -56,7 +56,7 @@ This variable does not take any parameters.
 
 ## $(charity.description)
 
-Returns the description of the Charity the channel is fundraising for.
+Returns the description of the charity the channel is fundraising for.
 
 #### Parameters
 
@@ -72,7 +72,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -80,7 +80,7 @@ This variable does not take any parameters.
 
 ## $(charity.name)
 
-Returns the name of the Charity the channel is fundraising for.
+Returns the name of the charity the channel is fundraising for.
 
 #### Parameters
 
@@ -96,7 +96,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -104,7 +104,7 @@ This variable does not take any parameters.
 
 ## $(charity.progress)
 
-Returns the progress towards the current fundraising goal for the Charity campaign in the channel, as a percentage.
+Returns the progress towards the current fundraising goal for the charity campaign on the channel, as a percentage.
 
 **This value may exceed `100%`, allowing Fossabot to highlight the achievement of a channel exceeding their fundraising goal.**
 
@@ -122,7 +122,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -142,7 +142,7 @@ This variable does not take any parameters.
 
 ## $(charity.remaining)
 
-Returns the amount left to raise for the current fundraising goal set for the Charity campaign running in the channel.
+Returns the amount left to raise to reach the current fundraising goal set for the charity campaign running on the channel.
 
 #### Parameters
 
@@ -164,7 +164,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -184,7 +184,7 @@ This variable does not take any parameters.
 
 ## $(charity.target)
 
-Returns the fundraising goal set for the Charity campaign that the channel is fundraising for.
+Returns the fundraising goal set for the charity campaign that the channel is fundraising for.
 
 #### Parameters
 
@@ -200,7 +200,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
@@ -214,7 +214,7 @@ This variable does not take any parameters.
 
 ## $(charity.website)
 
-Returns the website of the Charity the channel is fundraising for.
+Returns the website of the charity the channel is fundraising for.
 
 #### Parameters
 
@@ -230,7 +230,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case there is no active Charity campaign in the channel, returns the following:
+* In case there is no active charity campaign on the channel, returns the following:
 
     ```
     [Error: No campaign active.]
