@@ -21,7 +21,12 @@ This variable takes **two** *required* parameters. The **first** parameter is th
   * `na` - *(North America)*
   * `oce` - *(Oceania)*
   * `pbe` - *(Public Beta Environment)*
+  * `ph` - *(Philippines)*
+  * `sg` - *(Singapore)*
+  * `th` - *(Thailand)*
+  * `tw` - *(Taiwan)*
   * `tr` - *(Turkey)*
+  * `vn` - *(Vietnam)*
 
 #### Example Output
 
