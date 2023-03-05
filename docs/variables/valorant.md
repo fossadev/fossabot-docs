@@ -36,7 +36,7 @@ This variable does not take any parameters.
 
 #### Example Output
 
-* `$(valorant.rank)` *(all games modes, **without** custom games)*
+* `$(valorant.rank)`
 
     ```
     Platinum 1
