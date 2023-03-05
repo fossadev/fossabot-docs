@@ -4,7 +4,7 @@ id: valorant
 
 # $(valorant)
 
-Returns a range of metadata around a broadcaster's [**Riot Games**](https://www.riotgames.com/en) account, in relation to the game VALORANT, that can be accessed via multiple different variable members for each unique piece of information.
+Returns a range of metadata around a broadcaster's [**Riot Games**](https://www.riotgames.com/) account, in relation to the game [**VALORANT**](https://playvalorant.com/), that can be accessed via multiple different variable members for each unique piece of information.
 
 :::caution Authorization required!
 
@@ -23,12 +23,12 @@ This variable will only function if a broadcaster has authorized and connected a
   * `unrated`
 
 * **Special Modifiers**
-  * `include_custom` *(adds custom games to be considered)*
-  * `custom_only` *(limits the considered games to **custom games only**)*
+  * `include_custom` - *(adds custom games to be considered)*
+  * `custom_only` - *(limits the considered games to **custom games only**)*
 
 ## $(valorant.stream_wins)
 
-Returns the amount of games won that were played in the specified game mode(s) during the current stream.
+Returns the number of games that ended in a win for a specified game mode(s) during the current stream session.
 
 #### Parameters
 
@@ -70,7 +70,7 @@ This variable takes **one** or more *optional* parameters that is a list of **ga
 
 ## $(valorant.stream_losses)
 
-Returns the amount of games lost that were played in the specified game mode(s) during the current stream.
+Returns the number of games that ended in a loss for a specified game mode(s) during the current stream session.
 
 #### Parameters
 
@@ -112,7 +112,7 @@ This variable takes **one** or more *optional* parameters that is a list of **ga
 
 ## $(valorant.stream_ties)
 
-Returns the amount of games tied that were played in the specified game mode(s) during the current stream.
+Returns the number of games that ended in a tie for a specified game mode(s) during the current stream session.
 
 #### Parameters
 
