@@ -207,7 +207,7 @@ An invalid token will return HTTP status code `400` with the following body:
 
 #### Rate Limits
 
-Fossabot uses a **[leaky bucket](https://en.wikipedia.org/wiki/Leaky_bucket) rate limiter** to protect its services from abuse. You will receive a `429` HTTP status code with the following body if you exceed the rate limit:
+Fossabot uses a **[leaky bucket](https://wikipedia.org/wiki/Leaky_bucket) rate limiter** to protect its services from abuse. You will receive a `429` HTTP status code with the following body if you exceed the rate limit:
 
 ```
 {
@@ -224,4 +224,4 @@ Fossabot uses a **[leaky bucket](https://en.wikipedia.org/wiki/Leaky_bucket) rat
 | :---------------------: | :-----------------------------------------------------------------------------------------------------: |
 |   `x-ratelimit-total`   |                                The total size of your rate limit bucket.                                |
 | `x-ratelimit-remaining` |                                 The remaining requests in your bucket.                                  |
-|   `x-ratelimit-reset`   | A [unix timestamp](https://en.wikipedia.org/wiki/Unix_time) of when your bucket is completely refilled. |
+|   `x-ratelimit-reset`   | A [unix timestamp](https://wikipedia.org/wiki/Unix_time) of when your bucket is completely refilled. |

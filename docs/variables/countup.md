@@ -35,7 +35,7 @@ This variable takes **one** *required* parameter that is a **date string** to co
 
 If you would like to specify a different timezone than coordinated universal time (UTC), you can do so by providing the UTC offset to that timezone (e.g. `GMT-0400` for EDT) at the end of the date string.
 
-> ***A list of all existing timezones can be found [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List).***
+> ***A list of all existing timezones can be found [here](https://wikipedia.org/wiki/List_of_tz_database_time_zones#List).***
 
 #### Example Output
 

@@ -225,7 +225,7 @@ This variable does not take any parameters.
 
 ## $(channel.subscribers)
 
-Returns the current number of users [**subscribed**](https://www.twitch.tv/creatorcamp/en/get-rewarded/bits-and-subscriptions/) to a broadcaster.
+Returns the current number of users [**subscribed**](https://www.twitch.tv/creatorcamp/get-rewarded/bits-and-subscriptions/) to a broadcaster.
 
 #### Parameters
 

@@ -4,7 +4,7 @@ id: tiktok
 
 # $(tiktok)
 
-Returns a range of metadata around a broadcaster's latest [**TikTok**](https://www.tiktok.com/en/) video that can be accessed via multiple different placeholders.
+Returns a range of metadata around a broadcaster's latest [**TikTok**](https://www.tiktok.com/) video that can be accessed via multiple different placeholders.
 
 :::caution Authorization required!
 
