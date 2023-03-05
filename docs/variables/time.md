@@ -10,7 +10,7 @@ Returns the current time in a specified timezone. Shares this behavior with `$(c
 
 This variable takes **one** *required* parameter that is a **valid [Time Zone Database](https://www.iana.org/time-zones) name**, and **one** *optional* parameter that is a **string of tokens** specifying the output format, which defaults to `hh:mm:ss A (z)` if not provided.
 
-> ***A list of all existing timezones can be found [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List), and a list of all available tokens can be found [here](https://momentjs.com/docs/#/displaying/format/).***
+> ***A list of all existing timezones can be found [here](https://wikipedia.org/wiki/List_of_tz_database_time_zones#List), and a list of all available tokens can be found [here](https://momentjs.com/docs/#/displaying/format/).***
 
 #### Example Output
 

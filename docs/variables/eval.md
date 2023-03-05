@@ -4,7 +4,7 @@ id: eval
 
 # $(eval)
 
-Returns the output of custom [**JavaScript**](https://en.wikipedia.org/wiki/JavaScript) code using Fossabot's own JavaScript engine.
+Returns the output of custom [**JavaScript**](https://wikipedia.org/wiki/JavaScript) code using Fossabot's own JavaScript engine.
 
 :::caution This variable is heavily limited to prevent abuse!
 
@@ -68,7 +68,7 @@ This variable takes **one** *required* parameter that is **JavaScript code** to 
 
 #### Error Output
 
-* In case of a [**standard JavaScript error**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors#list_of_errors), returns the specific JavaScript error.
+* In case of a [**standard JavaScript error**](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Errors#list_of_errors), returns the specific JavaScript error.
 
 * In case an evaluation times out, returns the following:
 
