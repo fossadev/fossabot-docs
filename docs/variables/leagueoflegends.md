@@ -22,6 +22,7 @@ This variable takes **two** *required* parameters. The **first** parameter is th
   * `oce` - *(Oceania)*
   * `pbe` - *(Public Beta Environment)*
   * `ph` - *(Philippines)*
+  * `ru` - *(Russia)*
   * `sg` - *(Singapore)*
   * `th` - *(Thailand)*
   * `tw` - *(Taiwan)*

@@ -26,6 +26,42 @@ This variable will only function if a broadcaster has authorized and connected a
   * `include_custom` - *(adds custom games to be considered)*
   * `custom_only` - *(limits the considered games to **custom games only**)*
 
+## $(valorant.rank)
+
+Returns the current competitive rank of the broadcaster.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(valorant.rank)`
+
+    ```
+    Platinum 1
+    ```
+
+#### Error Output
+
+* In case we are unable to retrieve a response from [Riot](https://riotgames.com)'s API:
+
+    ```
+    [Error: Riot API returned an error.]
+    ```
+
+* In case we are unable to resolve the Riot's internal competitive type to a label:
+
+    ```
+    <unknown>
+    ```
+
+* In case the Riot account does not have any competitive match history:
+
+    ```
+    [Error: Cannot determine rank - account does not appear to have any competitive match history.]
+    ```
+
 ## $(valorant.stream_wins)
 
 Returns the number of games that ended in a win for a specified game mode(s) during the current stream session.
