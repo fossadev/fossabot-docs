@@ -28,7 +28,7 @@ This variable will only function if a broadcaster has authorized and connected a
 
 ## $(valorant.display_name)
 
-Returns the current game name and tag of the broadcaster.
+Returns the current name and tag of the linked [**Riot Games**](https://riotgames.com) account.
 
 #### Parameters
 
@@ -44,13 +44,13 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case we are unable to retrieve a response from [Riot](https://riotgames.com)'s API:
+* In case we are unable to retrieve a response from [**Riot**](https://riotgames.com)'s API:
 
     ```
     [Error: Riot API returned an error.]
     ```
 
-* In case the broadcaster has not yet authorized the [Riot Games](https://riotgames.com) integration:
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
 
     ```
     [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
@@ -74,7 +74,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case we are unable to retrieve a response from [Riot](https://riotgames.com)'s API:
+* In case we are unable to retrieve a response from [**Riot**](https://riotgames.com)'s API:
 
     ```
     [Error: Riot API returned an error.]
@@ -92,7 +92,7 @@ This variable does not take any parameters.
     [Error: Cannot determine rank - account does not appear to have any competitive match history.]
     ```
 
-* In case the broadcaster has not yet authorized the [Riot Games](https://riotgames.com) integration:
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
 
     ```
     [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
@@ -140,7 +140,7 @@ This variable takes **one** or more *optional* parameters that is a list of **ga
     [Error: Queue must be one of: competitive, deathmatch, escalation, premier, replication, spikerush, swiftplay, unrated.]
     ```
 
-* In case the broadcaster has not yet authorized the [Riot Games](https://riotgames.com) integration:
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
 
     ```
     [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
@@ -188,7 +188,7 @@ This variable takes **one** or more *optional* parameters that is a list of **ga
     [Error: Queue must be one of: competitive, deathmatch, escalation, premier, replication, spikerush, swiftplay, unrated.]
     ```
 
-* In case the broadcaster has not yet authorized the [Riot Games](https://riotgames.com) integration:
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
 
     ```
     [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
@@ -236,7 +236,7 @@ This variable takes **one** or more *optional* parameters that is a list of **ga
     [Error: Queue must be one of: competitive, deathmatch, escalation, premier, replication, spikerush, swiftplay, unrated.]
     ```
 
-* In case the broadcaster has not yet authorized the [Riot Games](https://riotgames.com) integration:
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
 
     ```
     [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
