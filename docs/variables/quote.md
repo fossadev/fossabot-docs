@@ -10,7 +10,7 @@ Returns a channel quote by its index.
 
 This variable takes **one** *optional* parameter that is the **index** of the quote to retrieve, or, if you would like Fossabot to select a quote at random, specify `random`.
 
-If no parameter is defined, Fossabot will default to the `random` parameter.
+Defaults to `random` if no parameter is provided.
 
 #### Example Output
 
@@ -34,7 +34,7 @@ If no parameter is defined, Fossabot will default to the `random` parameter.
 
 #### Error Output
 
-* In case no quote was found at that index, returns the following:
+* If no quote could be found at the index provided, returns the following:
 
     ```
     [Error: Quote not found.]
