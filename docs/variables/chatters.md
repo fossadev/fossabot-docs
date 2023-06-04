@@ -50,13 +50,13 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case [Fossabot](https://fossabot.com) does not have access to the chatters list, returns the following:
+* In case [**Fossabot**](https://fossabot.com) does not have access to the chatters list, returns the following:
 
     ```
     [Error: Fossabot does not have access to the chatters list. Please have the broadcaster log in at fossabot.com]
     ```
 
-* In case there is an unexpected [Twitch](https://twitch.tv) API error.
+* In case there is an unexpected [**Twitch**](https://twitch.tv) API error.
 
     ```
     [Error: Unable to query chatters list.]
@@ -80,13 +80,13 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case [Fossabot](https://fossabot.com) does not have access to the chatters list, returns the following:
+* In case [**Fossabot**](https://fossabot.com) does not have access to the chatters list, returns the following:
 
     ```
     [Error: Fossabot does not have access to the chatters list. Please have the broadcaster log in at fossabot.com]
     ```
 
-* In case there is an unexpected [Twitch](https://twitch.tv) API error.
+* In case there is an unexpected [**Twitch**](https://twitch.tv) API error.
 
     ```
     [Error: Unable to query chatters list.]
@@ -110,7 +110,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case [Fossabot](https://fossabot.com) does not have access to the chatters list, returns the following:
+* In case [**Fossabot**](https://fossabot.com) does not have access to the chatters list, returns the following:
 
     ```
     [Error: Fossabot does not have access to the chatters list. Please have the broadcaster log in at fossabot.com]
@@ -122,7 +122,7 @@ This variable does not take any parameters.
     [Error: Unable to find a chatter.]
     ```
 
-* In case there is an unexpected [Twitch](https://twitch.tv) API error, returns the following:
+* In case there is an unexpected [**Twitch**](https://twitch.tv) API error, returns the following:
 
     ```
     [Error: Unable to query chatters list.]
@@ -146,7 +146,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case [Fossabot](https://fossabot.com) does not have access to the chatters list, returns the following:
+* In case [**Fossabot**](https://fossabot.com) does not have access to the chatters list, returns the following:
 
     ```
     [Error: Fossabot does not have access to the chatters list. Please have the broadcaster log in at fossabot.com]
@@ -158,7 +158,7 @@ This variable does not take any parameters.
     [Error: Unable to find a chatter.]
     ```
 
-* In case there is an unexpected [Twitch](https://twitch.tv) API error, returns the following:
+* In case there is an unexpected [**Twitch**](https://twitch.tv) API error, returns the following:
 
     ```
     [Error: Unable to query chatters list.]
@@ -182,7 +182,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case [Fossabot](https://fossabot.com) does not have access to the chatters list, returns the following:
+* In case [**Fossabot**](https://fossabot.com) does not have access to the chatters list, returns the following:
 
     ```
     [Error: Fossabot does not have access to the chatters list. Please have the broadcaster log in at fossabot.com]
@@ -194,7 +194,7 @@ This variable does not take any parameters.
     [Error: Unable to find a chatter.]
     ```
 
-* In case there is an unexpected [Twitch](https://twitch.tv) API error, returns the following:
+* In case there is an unexpected [**Twitch**](https://twitch.tv) API error, returns the following:
 
     ```
     [Error: Unable to query chatters list.]
@@ -218,7 +218,7 @@ This variable does not take any parameters.
 
 #### Error Output
 
-* In case [Fossabot](https://fossabot.com) does not have access to the chatters list, returns the following:
+* In case [**Fossabot**](https://fossabot.com) does not have access to the chatters list, returns the following:
 
     ```
     [Error: Fossabot does not have access to the chatters list. Please have the broadcaster log in at fossabot.com]
@@ -230,7 +230,7 @@ This variable does not take any parameters.
     [Error: Unable to find a chatter.]
     ```
 
-* In case there is an unexpected [Twitch](https://twitch.tv) API error, returns the following:
+* In case there is an unexpected [**Twitch**](https://twitch.tv) API error, returns the following:
 
     ```
     [Error: Unable to query chatters list.]
