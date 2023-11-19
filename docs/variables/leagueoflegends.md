@@ -53,7 +53,7 @@ This variable takes **two** *required* parameters. The **first** parameter is th
 * In case a Riot ID is not found, returns the following:
 
     ```
-    [Error: Riot ID not found]
+    [Error: Riot ID not found.]
     ```
 
 * In case a summoner cannot be found in the given region, returns the following:
