@@ -4,11 +4,22 @@ id: leagueoflegends
 
 # $(leagueoflegends)
 
-Returns the current [**League of Legends**](https://leagueoflegends.com) league points and rank of a summoner.
+Returns the current [**League of Legends**](https://leagueoflegends.com) league points and rank of a player.
+
+:::info Riot ID transition
+
+Riot have [**announced**](https://www.riotgames.com/en/news/summoner-name-riot-ID) their intention to migrate from Summoner Names to [**Riot IDs**](https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360041788533-Riot-ID-FAQ).
+
+In response, Fossabot is changing the syntax of `$(leagueoflegends)`. From `$(leagueoflegends <region> <summoner name>)` to `$(leagueoflegends <region> <Riot#ID>)`.
+
+For example, `$(leagueoflegends na WallisDev)` becomes `$(leagueoflegends na Aiden#Dev)`.
+
+The variable will continue to support both methods, but as Riot phases out the use of Summoner Names, the legacy functionality will break.
+:::
 
 #### Parameters
 
-This variable takes **two** *required* parameters. The **first** parameter is the **account region** of a summoner, and the **second** parameter is the **public name** of a summoner.
+This variable takes **two** *required* parameters. The **first** parameter is the **account region** of a player, and the **second** parameter is the [**Riot ID**](https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360041788533-Riot-ID-FAQ) of the player.
 
 * **Supported Account Regions**
   * `br` - *(Brazil)*
@@ -31,15 +42,21 @@ This variable takes **two** *required* parameters. The **first** parameter is th
 
 #### Example Output
 
-* `$(leagueoflegends kr SKT T1 Faker)`
+* `$(leagueoflegends kr Hide on bush#KR1)`
 
     ```
-    SKT T1 Faker is currently Challenger I 1102 LP
+    Hide on bush is currently Grandmaster I 789 LP
     ```
 
 #### Error Output
 
-* In case a summoner cannot be found, returns the following:
+* In case a Riot ID is not found, returns the following:
+
+    ```
+    [Error: Riot ID not found]
+    ```
+
+* In case a summoner cannot be found in the given region, returns the following:
 
     ```
     [Error: Summoner not found.] 
