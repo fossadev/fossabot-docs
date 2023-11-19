@@ -8,7 +8,7 @@ Returns the current [**League of Legends**](https://leagueoflegends.com) league 
 
 :::info Riot ID transition
 
-Riot have [**announced**](https://www.riotgames.com/en/news/summoner-name-riot-ID) their intention to migrate from Summoner Names to [**Riot IDs**](https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360041788533-Riot-ID-FAQ).
+Riot has [**announced**](https://www.riotgames.com/en/news/summoner-name-riot-ID) their intention to migrate from Summoner Names to [**Riot IDs**](https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360041788533-Riot-ID-FAQ).
 
 In response, Fossabot is changing the syntax of `$(leagueoflegends)`. From `$(leagueoflegends <region> <summoner name>)` to `$(leagueoflegends <region> <Riot#ID>)`.
 
