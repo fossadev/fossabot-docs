@@ -39,7 +39,7 @@ This variable does not take any parameters.
 * `$(valorant.display_name)`
 
     ```
-    Aiden#1365
+    Aiden#Dev
     ```
 
 #### Error Output
@@ -48,6 +48,78 @@ This variable does not take any parameters.
 
     ```
     [Error: Riot API returned an error.]
+    ```
+
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
+
+    ```
+    [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
+    ```
+
+## $(valorant.leaderboard_placement)
+
+:::caution Data may be outdated
+
+Due to limitations imposed by the [**Riot Games API**](https://developer.riotgames.com/docs/valorant), Fossabot's data may be stale for up to 30 minutes.
+
+:::
+
+Returns the current position of the broadcaster on their [**Ranked Leaderboard**](https://playvalorant.com/leaderboards).
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(valorant.leaderboard_placement)`
+
+    ```
+    122
+    ```
+
+#### Error Output
+
+* In case the Riot account does not appear in any [**Ranked Leaderboards**](https://playvalorant.com/leaderboards):
+
+    ```
+    [Error: Could not find player on any VALORANT leaderboards.]
+    ```
+
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
+
+    ```
+    [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
+    ```
+
+## $(valorant.leaderboard_wins)
+
+:::caution Data may be outdated
+
+Due to limitations imposed by the [**Riot Games API**](https://developer.riotgames.com/docs/valorant), Fossabot's data may be stale for up to 30 minutes.
+
+:::
+
+Returns the number of wins associated with the broadcaster on their [**Ranked Leaderboard**](https://playvalorant.com/leaderboards).
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(valorant.leaderboard_wins)`
+
+    ```
+    101
+    ```
+
+#### Error Output
+
+* In case the Riot account does not appear in any [**Ranked Leaderboards**](https://playvalorant.com/leaderboards):
+
+    ```
+    [Error: Could not find player on any VALORANT leaderboards.]
     ```
 
 * In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
@@ -90,6 +162,42 @@ This variable does not take any parameters.
 
     ```
     [Error: Cannot determine rank - account does not appear to have any competitive match history.]
+    ```
+
+* In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
+
+    ```
+    [Error: The broadcaster must first link their Riot Games account in fossabot.com -> integrations.]
+    ```
+
+## $(valorant.rank_rating)
+
+:::caution Data may be outdated
+
+Due to limitations imposed by the [**Riot Games API**](https://developer.riotgames.com/docs/valorant), Fossabot's data may be stale for up to 30 minutes.
+
+:::
+
+Returns the current [**Rank Rating (RR)**](https://support-valorant.riotgames.com/hc/articles/20113235347347) of the broadcaster.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(valorant.rank_rating)`
+
+    ```
+    764
+    ```
+
+#### Error Output
+
+* In case the Riot account does not appear in any [**Ranked Leaderboards**](https://playvalorant.com/leaderboards):
+
+    ```
+    [Error: Could not find player on any VALORANT leaderboards.]
     ```
 
 * In case the broadcaster has not yet authorized the [**Riot Games**](https://riotgames.com) integration:
