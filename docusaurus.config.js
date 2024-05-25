@@ -87,16 +87,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Terms of Serivce',
-                to: 'https://fossadev.com/tos',
+                to: 'https://fossabot.com/pages/terms',
               },
               {
                 label: 'Privacy Policy',
-                href: 'https://fossadev.com/privacy',
+                href: 'https://fossabot.com/pages/privacy',
               },
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()}, FossaDev Ltd. Not affiliated with Twitch. Registered in England and Wales (No. 12219499).`,
+        copyright: `© ${new Date().getFullYear()}, FossaDev Ltd. Not affiliated with Twitch or YouTube. Registered in England and Wales (No. 12219499).`,
       },
       prism: {
         theme: lightCodeTheme,
