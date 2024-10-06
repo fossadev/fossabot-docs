@@ -86,7 +86,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 to: 'https://github.com/fossadev/fossabot-docs',
               },
               {
-                label: 'Terms of Serivce',
+                label: 'Terms of Service',
                 to: 'https://fossabot.com/pages/terms',
               },
               {
