@@ -14,7 +14,7 @@ Fossabot only counts up to 250 unfulfilled redemptions. Rewards with more than 2
 
 :::
 
-Returns the same as `$(twitchreward.queue_depth)`: the number of unfulfilled redemptions for the reward.
+Returns the same as `$(twitchreward.queue_depth)`, the number of unfulfilled redemptions for the reward.
 
 #### Parameters
 
