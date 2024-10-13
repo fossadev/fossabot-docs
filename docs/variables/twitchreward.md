@@ -18,7 +18,7 @@ Returns the same as `$(twitchreward.queue_depth)`: the number of unfulfilled red
 
 #### Parameters
 
-This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of. 
+This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of.
 
 #### Example Output
 
@@ -46,7 +46,7 @@ Returns the number of unfulfilled redemptions for the reward.
 
 #### Parameters
 
-This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of. 
+This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of.
 
 #### Example Output
 
@@ -76,7 +76,7 @@ Returns the 5 oldest redeemers in the queue, sorted by oldest redemption first.
 
 #### Parameters
 
-This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of. 
+This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of.
 
 #### Example Output
 
@@ -100,7 +100,7 @@ Allows you to return a custom number of redeemers in the queue, sorted by oldest
 
 #### Parameters
 
-This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of. 
+This variable takes *one* **required** parameter that is the **name of the [Twitch Channel Point Reward](https://help.twitch.tv/s/article/channel-points-guide)** to fetch the metadata of.
 
 #### Example Output
 
