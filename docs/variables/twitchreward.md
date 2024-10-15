@@ -132,7 +132,6 @@ This variable takes *one* **required** parameter that is the **name of the [Twit
     [Error: User is not in queue!]
     ```
 
-
 ## $(twitchreward.redeemer_position.USERNAME_OR_ID)
 
 Returns the position for a specific user in the redemption queue. Replace `USERNAME_OR_ID` with another variable, such as [**$(user)**](/variables/user), or a hardcoded value. You may specifiy **either** a user ID, or username.
