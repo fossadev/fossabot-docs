@@ -22,8 +22,6 @@ This command takes **one** *required* parameter that is the **game name** to set
 
 #### Error Output
 
-* In case no game name is provided, returns the current game information (same as `!game` command).
-
 * In case the game doesn't exist, returns the following:
 
     ```

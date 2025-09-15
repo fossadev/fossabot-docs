@@ -6,6 +6,12 @@ id: game
 
 Returns the current game being played and how long it has been played.
 
+:::info Steam Integration
+
+When the current game is available on [**Steam**](https://store.steampowered.com/), the command will also return a direct link to the game's Steam store page.
+
+:::
+
 #### Parameters
 
 This command does not take any parameters.

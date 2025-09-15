@@ -1,8 +1,8 @@
 ---
-id: deletecommand
+id: delcmd
 ---
 
-# !deletecommand
+# !delcmd
 
 Deletes a custom command from the channel.
 
@@ -14,10 +14,10 @@ This command takes **one** *required* parameter that is the **command name** to 
 
 #### Example Output
 
-* `!deletecommand hello`
+* `!delcmd hello`
 
     ```
-    (Command deleted successfully - no output)
+    Successfully deleted command "!hello"
     ```
 
 #### Error Output
@@ -25,5 +25,5 @@ This command takes **one** *required* parameter that is the **command name** to 
 * In case no command name is provided, returns the following:
 
     ```
-    Usage: !deletecommand <command>
+    Usage: !delcmd <command>
     ```

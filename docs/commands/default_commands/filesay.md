@@ -40,9 +40,4 @@ This command takes **one** *required* parameter that is a **URL** to a text file
     Error: Invalid URL.
     ```
 
-* In case the operation is canceled, returns the following:
-
-    ```
-    Error: Canceled operation
-    ```
 

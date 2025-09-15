@@ -1,17 +1,17 @@
 ---
-id: setcommand
+id: addcmd
 ---
 
-# !setcommand
+# !addcmd
 
-Creates a new custom command or updates an existing one.
+Creates a new custom command for the channel.
 
 This command is only available to **Broadcasters** and **Moderators**.
 
 #### Parameters
 
 This command takes **two** *required* parameters:
-1. **Command name** - The name of the command to create or update
+1. **Command name** - The name of the command to create
 2. **Response** - The response text for the command
 
 #### Flags
@@ -28,10 +28,10 @@ This command supports the following optional flags:
 
 #### Example Output
 
-* `!setcommand hello Welcome to my stream!`
+* `!addcmd hello Welcome to my stream!`
 
     ```
-    (Command created or updated successfully - no output)
+    Successfully added command "!hello"
     ```
 
 #### Error Output
@@ -39,5 +39,5 @@ This command supports the following optional flags:
 * In case insufficient parameters are provided, returns the following:
 
     ```
-    Usage: !setcommand <command> <response>
+    Usage: !addcmd <command> <response>
     ```

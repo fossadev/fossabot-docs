@@ -53,10 +53,11 @@ Default commands are built-in commands that come with every Fossabot installatio
 - [**!filesaystop**](filesaystop.md) - Stops the currently running filesay operation
 
 ### Custom Command Management
-- [**!addcommand**](addcommand.md) - Creates a new custom command
-- [**!editcommand**](editcommand.md) - Modifies an existing custom command
-- [**!deletecommand**](deletecommand.md) - Deletes a custom command
+- [**!addcmd**](addcmd.md) - Creates a new custom command
+- [**!editcmd**](editcmd.md) - Modifies an existing custom command
+- [**!delcmd**](delcmd.md) - Deletes a custom command
 - [**!setcommand**](setcommand.md) - Creates or updates a custom command
+- [**!cmd**](cmd.md) - Comprehensive command management system
 
 ### Counter Management
 - [**!count**](count.md) - Manages custom counters for the channel

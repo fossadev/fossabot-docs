@@ -8,7 +8,7 @@ Displays channel emotes from various emote providers or reloads the emote cache.
 
 ## !emotes bttv
 
-Displays all BetterTTV emotes available in the channel.
+Displays all [**BetterTTV**](https://betterttv.com/) emotes available in the channel.
 
 #### Parameters
 
@@ -24,7 +24,7 @@ This command does not take any parameters.
 
 ## !emotes ffz
 
-Displays all FrankerFaceZ emotes available in the channel.
+Displays all [**FrankerFaceZ**](https://www.frankerfacez.com/) emotes available in the channel.
 
 #### Parameters
 
@@ -40,7 +40,7 @@ This command does not take any parameters.
 
 ## !emotes 7tv
 
-Displays all 7TV emotes available in the channel.
+Displays all [**7tv**](https://7tv.app/) emotes available in the channel.
 
 #### Parameters
 
@@ -56,7 +56,7 @@ This command does not take any parameters.
 
 ## !emotes twitch
 
-Displays all Twitch emotes available in the channel.
+Displays all [**Twitch**](https://twitch.tv) emotes available in the channel.
 
 #### Parameters
 

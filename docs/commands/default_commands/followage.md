@@ -9,8 +9,8 @@ Returns how long one user has been following another user.
 #### Parameters
 
 This command takes **two** *optional* parameters:
-1. **From user** - The username of the follower (defaults to the command sender)
-2. **To user** - The username of the user being followed (defaults to the channel owner)
+1. **Channel name**: The username of the follower (defaults to the command sender)
+2. **User name**: The username of the user being followed (defaults to the broadcaster)
 
 #### Example Output
 
