@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap);
+@import url(https://use.typekit.net/mux4twf.css);
 
 :root {
   --ifm-color-primary: #3e8eed;
@@ -14,10 +14,11 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --global-font: "IBM Plex Sans", sans-serif;
+  --global-font: "proxima-nova", sans-serif;
   --ifm-code-font-size: 95%;
   --ifm-heading-font-family: var(--global-font);
   --ifm-font-family-base: var(--global-font);
+  --ifm-font-weight-semibold: 600;
   --fossa-darkest: #121212;
 }
 
@@ -42,4 +43,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 code {
   white-space: pre-wrap;
+}
+
+.menu__link, .table-of-contents__link {
+  font-weight: 600;
 }
