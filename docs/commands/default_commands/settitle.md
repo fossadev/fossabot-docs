@@ -27,4 +27,3 @@ This command takes **one** *optional* parameter that is the **new stream title**
     ```
     Title for ChannelName: Current stream title here
     ```
-

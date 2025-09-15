@@ -9,6 +9,7 @@ Returns the date when one user followed another user.
 #### Parameters
 
 This command takes **two** *optional* parameters:
+
 1. **From user** - The username of the follower (defaults to the command sender)
 2. **To user** - The username of the user being followed (defaults to the channel owner)
 

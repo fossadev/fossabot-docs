@@ -15,20 +15,22 @@ Creates a new custom command for the channel.
 #### Parameters
 
 This command takes **two** *required* parameters:
+
 1. **Command name** - The name of the command to create
 2. **Response** - The response text for the command
 
 #### Flags
 
 This command supports the following optional flags:
-- `--enable`: Enable the command (default: enabled)
-- `--disable`: Disable the command
-- `-g, --global <seconds>`: Set global cooldown in seconds (default: 5)
-- `-u, --user <seconds>`: Set user cooldown in seconds (default: 15)
-- `-n, --name <name>`: Set command name
-- `-t, --type <type>`: Set response type: `reply`, `say`, `whisper`, or `mention` (default: say)
-- `--addalias <alias>`: Add an alias for the command (can be used multiple times)
-- `--removealias <alias>`: Remove an alias from the command (can be used multiple times)
+
+* `--enable`: Enable the command (default: enabled)
+* `--disable`: Disable the command
+* `-g, --global <seconds>`: Set global cooldown in seconds (default: 5)
+* `-u, --user <seconds>`: Set user cooldown in seconds (default: 15)
+* `-n, --name <name>`: Set command name
+* `-t, --type <type>`: Set response type: `reply`, `say`, `whisper`, or `mention` (default: say)
+* `--addalias <alias>`: Add an alias for the command (can be used multiple times)
+* `--removealias <alias>`: Remove an alias from the command (can be used multiple times)
 
 #### Example Output
 
@@ -53,20 +55,22 @@ Modifies an existing custom command's response.
 #### Parameters
 
 This command takes **two** *required* parameters:
+
 1. **Command name** - The name of the command to edit
 2. **New response** - The new response text for the command
 
 #### Flags
 
 This command supports the following optional flags:
-- `--enable` - Enable the command
-- `--disable` - Disable the command
-- `-g, --global <seconds>` - Set global cooldown in seconds
-- `-u, --user <seconds>` - Set user cooldown in seconds
-- `-n, --name <name>` - Set command name
-- `-t, --type <type>` - Set response type: `reply`, `say`, `whisper`, or `mention`
-- `--addalias <alias>` - Add an alias for the command (can be used multiple times)
-- `--removealias <alias>` - Remove an alias from the command (can be used multiple times)
+
+* `--enable` - Enable the command
+* `--disable` - Disable the command
+* `-g, --global <seconds>` - Set global cooldown in seconds
+* `-u, --user <seconds>` - Set user cooldown in seconds
+* `-n, --name <name>` - Set command name
+* `-t, --type <type>` - Set response type: `reply`, `say`, `whisper`, or `mention`
+* `--addalias <alias>` - Add an alias for the command (can be used multiple times)
+* `--removealias <alias>` - Remove an alias from the command (can be used multiple times)
 
 #### Example Output
 
@@ -199,20 +203,22 @@ Creates or updates a custom command. If the command doesn't exist, it will be cr
 #### Parameters
 
 This command takes **two** *required* parameters:
+
 1. **Command name** - The name of the command to create or update
 2. **Response** - The response text for the command
 
 #### Flags
 
 This command supports the following optional flags:
-- `--enable`: Enable the command (default: enabled)
-- `--disable`: Disable the command
-- `-g, --global <seconds>`: Set global cooldown in seconds (default: 5)
-- `-u, --user <seconds>`: Set user cooldown in seconds (default: 15)
-- `-n, --name <name>`: Set command name
-- `-t, --type <type>`: Set response type: `reply`, `say`, `whisper`, or `mention` (default: say)
-- `--addalias <alias>`: Add an alias for the command (can be used multiple times)
-- `--removealias <alias>`: Remove an alias from the command (can be used multiple times)
+
+* `--enable`: Enable the command (default: enabled)
+* `--disable`: Disable the command
+* `-g, --global <seconds>`: Set global cooldown in seconds (default: 5)
+* `-u, --user <seconds>`: Set user cooldown in seconds (default: 15)
+* `-n, --name <name>`: Set command name
+* `-t, --type <type>`: Set response type: `reply`, `say`, `whisper`, or `mention` (default: say)
+* `--addalias <alias>`: Add an alias for the command (can be used multiple times)
+* `--removealias <alias>`: Remove an alias from the command (can be used multiple times)
 
 #### Example Output
 

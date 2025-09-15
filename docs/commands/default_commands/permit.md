@@ -11,6 +11,7 @@ This command is only available to **Broadcasters** and **Moderators**.
 #### Parameters
 
 This command takes **two** *optional* parameters:
+
 1. **Username** - The user to permit (required)
 2. **Seconds** - Duration in seconds (defaults to 60, maximum 3600)
 

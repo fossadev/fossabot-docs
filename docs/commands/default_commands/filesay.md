@@ -39,5 +39,3 @@ This command takes **one** *required* parameter that is a **URL** to a text file
     ```
     Error: Invalid URL.
     ```
-
-

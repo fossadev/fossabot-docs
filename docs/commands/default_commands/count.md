@@ -11,6 +11,7 @@ This command is only available to **Broadcasters** and **Moderators**.
 #### Parameters
 
 This command takes **two** *optional* parameters:
+
 1. **Counter name** - The name of the counter to manage (required)
 2. **Value** - The value to set or adjust (optional for viewing)
 

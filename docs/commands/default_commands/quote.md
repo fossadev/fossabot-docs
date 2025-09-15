@@ -68,7 +68,6 @@ This command takes **one** *required* parameter that is the **quote content** to
     Usage: !quote add <quote>
     ```
 
-
 ## !quote edit
 
 Edits an existing quote in the channel's quote collection.
@@ -78,6 +77,7 @@ This command is only available to **Broadcasters** and **Moderators**.
 #### Parameters
 
 This command takes **two** *required* parameters:
+
 1. **Quote number** - The number of the quote to edit
 2. **New quote content** - The updated quote content
 
@@ -102,7 +102,6 @@ This command takes **two** *required* parameters:
     ```
     Error: Quote not found.
     ```
-
 
 ## !quote delete
 
@@ -135,4 +134,3 @@ This command takes **one** *required* parameter that is the **quote number** to 
     ```
     Error: Quote not found.
     ```
-

@@ -25,4 +25,3 @@ This command takes **one** *required* parameter that is a **question** to ask th
     ```
     You must ask the 8-ball something! Usage: !eightball <question>
     ```
-
