@@ -1,6 +1,5 @@
 ---
 id: index
-slug: /commands/default-commands
 ---
 
 # Default Commands
