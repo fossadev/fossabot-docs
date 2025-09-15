@@ -105,7 +105,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()}, FossaDev Ltd. Not affiliated with Twitch or YouTube. Registered in England and Wales (No. 12219499).`,
+        copyright: `Not affiliated with Twitch, YouTube or Kick.`,
       },
       prism: {
         theme: lightCodeTheme,
