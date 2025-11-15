@@ -37,9 +37,3 @@ This command does not take any parameters.
     ```
     Error: Fossabot does not have permission to create clips on this channel!
     ```
-
-* In case the command is used on a non-Twitch channel, returns the following:
-
-    ```
-    Error: Provider unsupported
-    ```
