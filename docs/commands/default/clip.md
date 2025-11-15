@@ -43,4 +43,3 @@ This command does not take any parameters.
     ```
     Error: Provider unsupported
     ```
-
