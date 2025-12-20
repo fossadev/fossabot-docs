@@ -48,6 +48,7 @@ Default commands are built-in commands that come with every Fossabot installatio
 ### Management Commands
 
 * [**!addcmd**](addcmd.md) - Creates a new custom command
+* [**!clip**](clip.md) - Creates a clip of the current livestream
 * [**!cmd**](cmd.md) - Comprehensive command management system
 * [**!count**](count.md) - Manages custom counters for the channel
 * [**!delcmd**](delcmd.md) - Deletes a custom command
