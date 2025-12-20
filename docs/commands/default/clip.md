@@ -4,21 +4,25 @@ id: clip
 
 # !clip
 
-Creates a clip of the current livestream.
+Creates a clip of the current stream on Twitch.
 
-:::info
-
-This command is only available for **Twitch** channels.
-
-:::
+This command is only available on **Twitch** streams.
 
 #### Parameters
 
-This command does not take any parameters.
+This command takes **one** *optional* parameter:
+
+1. **Title** - The title to set for the created clip (optional)
 
 #### Example Output
 
 * `!clip`
+
+    ```
+    🎬 Clip created! https://clips.twitch.tv/HappyFunnyAmazingCoolMoment 
+    ```
+
+* `!clip Amazing play by the streamer!`
 
     ```
     🎬 Clip created! https://clips.twitch.tv/HappyFunnyAmazingCoolMoment

@@ -32,9 +32,12 @@ Default commands are built-in commands that come with every Fossabot installatio
 
 ### Entertainment Commands
 
+* [**!clip**](clip.md) - Creates a clip of the current stream on Twitch
 * [**!dadjoke**](dadjoke.md) - Returns a random dad joke
 * [**!eightball**](eightball.md) - Returns a random response from the magic 8-ball
 * [**!fact**](fact.md) - Returns a random interesting fact
+* [**!vanish**](vanish.md) - Times out the command sender for 5 seconds
+* [**!votekick**](votekick.md) - Starts a vote kick poll to remove a user from chat
 
 ### Dictionary Commands
 
@@ -61,7 +64,6 @@ Default commands are built-in commands that come with every Fossabot installatio
 * [**!setcommand**](setcommand.md) - Creates or updates a custom command
 * [**!setgame**](setgame.md) - Changes the current game being played
 * [**!settitle**](settitle.md) - Changes the current stream title
-* [**!vanish**](vanish.md) - Times out the command sender for 5 seconds
 
 ## Usage
 
