@@ -13,6 +13,7 @@ This variable takes **one** *required* parameter that is a **[last.fm](https://w
 * **Supported Placeholders**
   * `{songname}` - *The song's name.*
   * `{artist}` - *The song's artist(s).*
+  * `{url}` - *Link to the song on [Last.FM](https://last.fm)*
 
 #### Example Output
 
@@ -26,6 +27,12 @@ This variable takes **one** *required* parameter that is a **[last.fm](https://w
 
     ```
     Dreamland by Fox Stevenson
+    ```
+
+* `$(lastfm aiden {songname} by {artist} | {url})`
+
+    ```
+    Dreamland by Fox Stevenson | https://www.last.fm/music/Fox+Stevenson/_/Dreamland
     ```
 
 #### Error Output
