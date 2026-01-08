@@ -48,6 +48,17 @@ Default commands are built-in commands that come with every Fossabot installatio
 
 * [**!emotes**](emotes.md) - Displays channel emotes from various providers
 
+### Media Request Commands
+
+* [**!song**](song.md) - Displays the currently playing track in the media request queue
+* [**!sr**](sr.md) - Adds a track to the media request queue using a URL or search query
+* [**!clear**](clear.md) - Clears the entire media request queue
+* [**!songqueue**](songqueue.md) - Provides a link to view the current media request queue
+* [**!skip**](skip.md) - Skips the currently playing track in the media request queue
+* [**!volume**](volume.md) - Displays or sets the playback volume for media requests
+* [**!voteskip**](voteskip.md) - Votes to skip the currently playing track
+* [**!wrongsong**](wrongsong.md) - Removes your most recently requested track from the media request queue
+
 ### Management Commands
 
 * [**!addcmd**](addcmd.md) - Creates a new custom command
