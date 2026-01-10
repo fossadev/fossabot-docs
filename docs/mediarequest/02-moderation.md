@@ -78,7 +78,7 @@ The following functionality is available in the `SoundCloud settings` section of
 ![Example of SoundCloud settings](/img/mediarequest/soundcloud-settings-example.png)
 
 * **Minimum play count**: SoundCloud tracks must contain at least the given number of plays to be requested.
-* **Allowed SoundCloud users:** Trackc must have been uploadd by a given list of [**SoundCloud users**](https://help.soundcloud.com/hc/articles/115003567968-Your-Display-Name-Location-and-Profile-URL) to be requested.
+* **Allowed SoundCloud users:** Tracks must have been uploaded by a given list of [**SoundCloud users**](https://help.soundcloud.com/hc/articles/115003567968-Your-Display-Name-Location-and-Profile-URL) to be requested.
 * **Blocked SoundCloud users:** Block tracks uploaded by given list of [**SoundCloud users**](https://help.soundcloud.com/hc/articles/115003567968-Your-Display-Name-Location-and-Profile-URL) from being requested.
 * **Blocked tags**: Block tracks containing a given list of [**SoundCloud tags**](https://help.soundcloud.com/hc/articles/115003562828-Adding-or-changing-a-genre-or-tags-on-your-tracks) from being requested.
 
