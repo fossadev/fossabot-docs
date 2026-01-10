@@ -15,13 +15,13 @@ This command does not take any parameters.
 * `!voteskip` (when more votes are needed)
 
     ```
-    UserName voted to skip this track. 3 votes are required to skip!
+    Aiden voted to skip this track. 3 votes are required to skip!
     ```
 
 * `!voteskip` (when enough votes are reached)
 
     ```
-    ⏭️ skipping "Artist Name - Song Title"...
+    ⏭️ skipping "Rick Astley - Never Gonna Give You Up"...
     ```
 
 #### Error Output
