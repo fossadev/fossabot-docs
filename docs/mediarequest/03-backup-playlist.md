@@ -5,7 +5,7 @@ slug: /mediarequest/backup-playlist
 
 # Backup playlist
 
-Fossabot features a backup playlist that allows you to define songs that can will be picked at random when there are no viewer requests left in the queue.
+Fossabot features a backup playlist that allows you to define songs that can be picked at random when there are no viewer requests left in the queue.
 
 ![Example of the backup playlist manager UI](/img/mediarequest/backup-playlist-example.png)
 
@@ -21,6 +21,6 @@ Twitch also suggests a list of [**alternative music sources here**](https://help
 
 ## Importing from YouTube
 
-You may import an existing YouTube playlist in to your backup playlist.
+You may import an existing YouTube playlist into your backup playlist.
 
 ![Example of the backup playlist import modal](/img/mediarequest/backup-playlist-youtube-import-example.png)

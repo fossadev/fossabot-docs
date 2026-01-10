@@ -18,4 +18,4 @@ Fossabot's media request system is built to be customizable and adapt to the nee
 * [**!skip**](../commands/default/skip.md) - Skips the currently playing media request.
 * [**!song**](../commands/default/song.md) - Returns the currently playing media request.
 * [**!sr**](../commands/default/sr.md) - Allow viewers to request media.
-* [**!song**](../commands/default/voteskip.md) - Allow viewers to vote on skipping the currently playing media request.
+* [**!voteskip**](../commands/default/voteskip.md) - Allow viewers to vote on skipping the currently playing media request.
