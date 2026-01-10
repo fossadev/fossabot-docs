@@ -27,7 +27,7 @@ You may also ban a track from being requested again using the three dot menu to 
 
 ![Example showing how to ban a track in the moderation queue](/img/mediarequest/ban-track-from-moderation-queue-example.png)
 
-## Moderation setings
+## Moderation settings
 
 Fossabot features a wide range of moderation controls to help automate the tireless task of managing your media request queue.
 
