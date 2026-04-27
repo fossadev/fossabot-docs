@@ -6,7 +6,7 @@ id: user
 
 Returns a range of metadata around a (specified) user's channel that can be accessed via multiple different variable members for each unique piece of information.
 
-:::info[This variable behaves different when used inside of timers!]
+:::info[This variable behaves differently when used inside of timers!]
 
 Timers are executed on an interval by Fossabot itself and therefore this variable behaves different when used inside of one.
 
