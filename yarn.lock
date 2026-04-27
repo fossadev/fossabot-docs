@@ -5487,12 +5487,12 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^1.1.7":
-  version: 1.1.12
-  resolution: "brace-expansion@npm:1.1.12"
+  version: 1.1.14
+  resolution: "brace-expansion@npm:1.1.14"
   dependencies:
     balanced-match: "npm:^1.0.0"
     concat-map: "npm:0.0.1"
-  checksum: 10c0/975fecac2bb7758c062c20d0b3b6288c7cc895219ee25f0a64a9de662dbac981ff0b6e89909c3897c1f84fa353113a721923afdec5f8b2350255b097f12b1f73
+  checksum: 10c0/b6fdac832bc4e36a753658c9ed052c2e1a2be221763b002df25d1efbf7d21724334e726a6cd5eadc72a4b19ec3efb632d629cc003bc9c62f7af7a7915ffa4385
   languageName: node
   linkType: hard
 
@@ -9258,9 +9258,9 @@ __metadata:
   linkType: hard
 
 "lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
-  version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
-  checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
+  version: 4.18.1
+  resolution: "lodash@npm:4.18.1"
+  checksum: 10c0/757228fc68805c59789e82185135cf85f05d0b2d3d54631d680ca79ec21944ec8314d4533639a14b8bcfbd97a517e78960933041a5af17ecb693ec6eecb99a27
   languageName: node
   linkType: hard
 
@@ -9855,9 +9855,9 @@ __metadata:
   linkType: hard
 
 "node-forge@npm:^1":
-  version: 1.3.3
-  resolution: "node-forge@npm:1.3.3"
-  checksum: 10c0/9c6f53b0ebb34865872cf62a35b0aef8fb337e2efc766626c2e3a0040f4c02933bf29a62ba999eb44a2aca73bd512c4eda22705a47b94654b9fb8ed53db9a1db
+  version: 1.4.0
+  resolution: "node-forge@npm:1.4.0"
+  checksum: 10c0/67330a5f1f95257a4c8a93b7d555abe87b5f15e350123aa396c97a21a8ca94f9c6549008eb2c73668a91e0d7e3a905785acbd8f8bd0751c29401292011f8f8e1
   languageName: node
   linkType: hard
 
