@@ -5,13 +5,13 @@ slug: /keywords/variables
 
 # Variables
 
-:::caution Disabling the variable will disable the **phrase group entirely**.
+:::warning[Disabling the variable will disable the **phrase group entirely**.]
 
 For example, the below keyword phrase group will *not* work if I disable the variable. All other phrases within the group are ignored.
 
 :::
 
-:::caution Deleting the variable will disable the **phrase group entirely**.
+:::warning[Deleting the variable will disable the **phrase group entirely**.]
 
 For example, the below keyword phrase group will *not* work if I delete the variable. All other phrases within the group are ignored.
 

@@ -6,7 +6,7 @@ id: tiktok
 
 Returns a range of metadata around a broadcaster's latest [**TikTok**](https://www.tiktok.com/) video that can be accessed via multiple different placeholders.
 
-:::caution Authorization required!
+:::warning[Authorization required!]
 
 This variable will only function if a broadcaster has authorized and connected a TikTok account within Fossabot's dashboard under the **Integrations** tab.
 

@@ -6,7 +6,7 @@ id: countup
 
 Returns the time that has passed since a specified date.
 
-:::info This variables shares the same behavior with $(countdown)!
+:::info[This variable shares the same behavior with $(countdown)!]
 
 Both `$(countup)` and `$(countdown)` work the exact same way and only coexist for syntactic sugar.
 

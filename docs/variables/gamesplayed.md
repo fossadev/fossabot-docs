@@ -6,7 +6,7 @@ id: gamesplayed
 
 Returns a list of recorded game directories that a broadcaster's latest stream was, or current stream is under.
 
-:::info This feature is managed by a custom tracking system!
+:::info[This feature is managed by a custom tracking system!]
 
 Fossabot only populates this list if it was part of your channel during at least one game change.
 

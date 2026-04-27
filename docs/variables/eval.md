@@ -6,7 +6,7 @@ id: eval
 
 Returns the output of custom [**JavaScript**](https://wikipedia.org/wiki/JavaScript) code using Fossabot's own JavaScript engine.
 
-:::caution This variable is heavily limited to prevent abuse!
+:::warning[This variable is heavily limited to prevent abuse!]
 
 The **maximum** execution time of your code may not exceed **50ms**, and there is a limit of **one** evaluation **per action** *(command, keyword, or timer)*.
 

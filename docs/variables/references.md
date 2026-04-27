@@ -6,7 +6,7 @@ id: references
 
 Returns the parsed variable response from a custom command.
 
-:::info Recursive `$(references)` invocations are blocked!
+:::info[Recursive `$(references)` invocations are blocked!]
 
 You may not call a `$(references)` variable from within another `$(references)` variable. This is to prevent service abuse.
 

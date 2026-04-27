@@ -6,7 +6,7 @@ id: pathencode
 
 Returns a path encoded version of specified input.
 
-:::info The parsing for how paths are escaped/unescaped is often dependent on the programming language.
+:::info[The parsing for how paths are escaped/unescaped is often dependent on the programming language.]
 
 Fossabot is written in Go and uses the native path encoders/decoders. Please refer to the [**Go documentation**](https://pkg.go.dev/net/url#PathEscape) if you come across any inconsistencies.
 

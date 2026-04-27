@@ -6,7 +6,7 @@ id: mastodon
 
 Returns the latest status as well as the time that has passed since it was tweeted from a specified [Mastodon](https://mastodon.social) account.
 
-:::info Profile must be available through Mastodon.social
+:::info[Profile must be available through Mastodon.social]
 
 Fossabot is not able to query any Mastodon instance due to security concerns, your profile must be available through [mastodon.social](https://mastodon.social) to be retrievable by Fossabot.
 

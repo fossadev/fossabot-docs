@@ -74,19 +74,19 @@ These headers are present in requests **sent from messages** and therefore attac
 
 Fossabot exposes two API endpoints that you may use to either validate that a given customapi request originated from Fossabot, or to obtain more data that would allow you to customize how you respond to a given request.
 
-:::info These endpoints are rate limited.
+:::info[These endpoints are rate limited.]
 
-Refer to [**Rate Limits**](#ratelimits) for more information.
+Refer to [**Rate Limits**](#rate-limits) for more information.
 :::
 
-:::caution Tokens expire after 60 seconds.
+:::warning[Tokens expire after 60 seconds.]
 
 You will receive a `token_invalid` error when sending a request to these endpoints if the token has expired.
 :::
 
 #### Validating requests
 
-:::info This is a single use endpoint.
+:::info[This is a single use endpoint.]
 
 This means that you will only receive a valid token response the first time you call this endpoint. If you call this endpoint twice using the same token, the second request will return an error.
 :::
@@ -132,7 +132,7 @@ GET https://api.fossabot.com/v2/customapi/context/<token>
 
 A valid token will return HTTP status code `200` with the following body:
 
-:::info `message` is a nullable field
+:::info[`message` is a nullable field]
 
 In the event the customapi request was dispatched from an automated action (such as a timer), `message` will be `null`.
 :::

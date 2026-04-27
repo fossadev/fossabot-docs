@@ -178,7 +178,7 @@ This variable does not take any parameters.
 
 Returns the **Fossabot channel URL** of a broadcaster. This is useful for linking to commands pages, and dashboards on Fossabot.
 
-:::info Fossabot slugs might not match a broadcaster's username!
+:::info[Fossabot slugs might not match a broadcaster's username!]
 
 It's important to note that just like Twitch, Fossabot has to ensure that all channel URLs on the platform remain unique. Therefore we handle cases where someone may have had the same name as you on Twitch before in a special way.
 

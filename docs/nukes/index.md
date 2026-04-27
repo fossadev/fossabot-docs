@@ -7,7 +7,7 @@ slug: /nukes
 
 Nukes provide a powerful moderation tool that greatly assists in dealing with many offenses all at once and at the same time. They have the power to mass ban, timeout and delete messages based on pattern matching and regular expressions.
 
-:::caution Nukes are very powerful!
+:::warning[Nukes are very powerful!]
 
 Please read this documentation very carefully and ensure that you understand the risks and possible outcomes when using nukes in an unintended way.
 
