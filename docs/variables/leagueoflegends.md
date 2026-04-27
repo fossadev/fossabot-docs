@@ -6,7 +6,7 @@ id: leagueoflegends
 
 Returns the current [**League of Legends**](https://leagueoflegends.com) league points and rank of a player.
 
-:::info Riot ID transition
+:::info[Riot ID transition]
 
 Riot has [**announced**](https://www.riotgames.com/en/news/summoner-name-riot-ID) their intention to migrate from Summoner Names to [**Riot IDs**](https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360041788533-Riot-ID-FAQ).
 

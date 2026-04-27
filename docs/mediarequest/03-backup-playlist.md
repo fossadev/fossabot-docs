@@ -11,7 +11,7 @@ Fossabot features a backup playlist that allows you to define songs that can wil
 
 By default, Fossabot provides a playlist of [**Monstercat Music**](https://youtube.com/@Monstercat) for you to use.
 
-:::warning Comply with copyright law!
+:::warning[Comply with copyright law!]
 
 While Monstercat is a vendor that provides great creator friendly music, you must still purchase a [**Monstercat Gold**](https://www.monstercat.com/gold) license to play it on stream. Fossabot is not responsible for your adherence to copyright and local law, nor provides a license for its users.
 

@@ -6,7 +6,7 @@ id: sender
 
 Returns a range of metadata around the sender's channel that can be accessed via multiple different variable members for each unique piece of information.
 
-:::caution Timers are not supported!
+:::warning[Timers are not supported!]
 
 Timers are executed on an interval by Fossabot itself and therefore this variable cannot be used inside of them.
 

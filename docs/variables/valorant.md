@@ -6,7 +6,7 @@ id: valorant
 
 Returns a range of metadata around a broadcaster's [**Riot Games**](https://www.riotgames.com/) account, in relation to the game [**VALORANT**](https://playvalorant.com/), that can be accessed via multiple different variable members for each unique piece of information.
 
-:::caution Authorization required!
+:::warning[Authorization required!]
 
 This variable will only function if a broadcaster has authorized and connected a Riot Games account within Fossabot's dashboard under the **Integrations** tab.
 
@@ -58,7 +58,7 @@ This variable does not take any parameters.
 
 ## $(valorant.leaderboard_placement)
 
-:::caution Data may be outdated
+:::warning[Data may be outdated]
 
 Due to limitations imposed by the [**Riot Games API**](https://developer.riotgames.com/docs/valorant), Fossabot's data may be stale for up to 30 minutes.
 
@@ -94,7 +94,7 @@ This variable does not take any parameters.
 
 ## $(valorant.leaderboard_wins)
 
-:::caution Data may be outdated
+:::warning[Data may be outdated]
 
 Due to limitations imposed by the [**Riot Games API**](https://developer.riotgames.com/docs/valorant), Fossabot's data may be stale for up to 30 minutes.
 
@@ -172,7 +172,7 @@ This variable does not take any parameters.
 
 ## $(valorant.rank_rating)
 
-:::caution Data may be outdated
+:::warning[Data may be outdated]
 
 Due to limitations imposed by the [**Riot Games API**](https://developer.riotgames.com/docs/valorant), Fossabot's data may be stale for up to 30 minutes.
 

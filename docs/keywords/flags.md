@@ -13,7 +13,7 @@ The only flag which does **not** support functionality from other flags, is [var
 
 ## regex
 
-:::info Your regex must be compatible with the [RE2](https://github.com/google/re2) regex engine!
+:::info[Your regex must be compatible with the [RE2](https://github.com/google/re2) regex engine!]
 
 Fossabot executes regular expressions using [RE2](https://github.com/google/re2/wiki/WhyRE2), a regex engine created by Google. Not all features are supported by this engine, and you are responsible for ensuring that your regex is compatible with this engine, else Fossabot will silently ignore it.
 
@@ -47,7 +47,7 @@ For example, if you had a phrase group with the phrase `test`, and a message wit
 
 ## var
 
-:::info All other flags are ignored when using `var:`.
+:::info[All other flags are ignored when using `var:`.]
 
 If you define other flags on the phrase, they will be ignored.
 

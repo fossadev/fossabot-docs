@@ -6,7 +6,7 @@ id: querystring
 
 Returns a [**URL encoded**](urlencode.md) version of all arguments provided after the first space following a command name.
 
-:::info The parsing for how queries are escaped is often dependent on the programming language.
+:::info[The parsing for how queries are escaped is often dependent on the programming language.]
 
 Fossabot is written in Go and uses the native query encoders. Please refer to the [**Go documentation**](https://pkg.go.dev/net/url#QueryEscape) if you come across any inconsistencies.
 

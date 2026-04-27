@@ -35,7 +35,7 @@ Fossabot features a wide range of moderation controls to help automate the tirel
 
 ![Example of the queue limits settings](/img/mediarequest/queue-limits-example.png)
 
-:::warning Fossabot enforces a system limit of __1000 queued tracks.__
+:::warning[Fossabot enforces a system limit of __1000 queued tracks.__]
 
 Reach out in [**Discord**](https://fossabot.com/discord) if you believe you require a higher limit. We can review and grant if approved.
 
