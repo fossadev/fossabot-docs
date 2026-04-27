@@ -6,7 +6,7 @@ id: countdown
 
 Returns the time that is left until a specified date.
 
-:::info[This variables shares the same behavior with $(countup)!]
+:::info[This variable shares the same behavior as $(countup)!]
 
 Both `$(countdown)` and `$(countup)` work the exact same way and only coexist for syntactic sugar.
 
