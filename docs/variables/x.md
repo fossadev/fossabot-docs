@@ -4,7 +4,7 @@ id: x
 
 # $(x)
 
-Returns the latest post as well as the time that has passed since it was posted from a specified [X](https://x.com) (formerly Twitter) account.
+Returns the latest post as well as the time that has passed since it was posted from a specified [**X**](https://x.com) account.
 
 #### Parameters
 

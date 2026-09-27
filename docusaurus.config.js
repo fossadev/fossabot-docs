@@ -93,8 +93,8 @@ const darkCodeTheme = themes.dracula;
                 href: 'https://fossabot.com/discord',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/Fossabot',
+                label: 'X',
+                href: 'https://x.com/Fossabot',
               },
             ],
           },
