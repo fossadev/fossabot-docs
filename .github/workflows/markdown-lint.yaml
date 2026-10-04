@@ -1,4 +1,4 @@
-name: Markdown linting
+name: Docs checks
 
 on: [push, pull_request]
 
@@ -7,10 +7,30 @@ jobs:
     name: "Lint markdown files"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         name: Checkout code
 
       - name: Lint markdown files
-        uses: docker://avtodev/markdown-lint:v1
+        uses: DavidAnson/markdownlint-cli2-action@v20
         with:
-          args: "**/*.md"
+          globs: "docs/**/*.mdx"
+
+  mintlify:
+    name: "Validate Mintlify site"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout code
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate build
+        run: npx -y mint@latest validate
+
+      - name: Check for broken links
+        run: npx -y mint@latest broken-links

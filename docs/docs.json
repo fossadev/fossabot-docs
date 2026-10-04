@@ -1,0 +1,221 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Fossabot",
+  "colors": {
+    "primary": "#3e8eed",
+    "light": "#3e8eed",
+    "dark": "#3e8eed"
+  },
+  "favicon": "/img/favicon.ico",
+  "logo": {
+    "light": "/img/logo.svg",
+    "dark": "/img/logo.svg",
+    "href": "https://fossabot.com"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting started",
+        "pages": [
+          "index",
+          "getting-started"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          {
+            "group": "Commands",
+            "pages": [
+              "commands/custom-commands",
+              {
+                "group": "Default Commands",
+                "root": "commands/default/index",
+                "pages": [
+                  "commands/default/accountage",
+                  "commands/default/accountdate",
+                  "commands/default/addcmd",
+                  "commands/default/clear",
+                  "commands/default/clip",
+                  "commands/default/cmd",
+                  "commands/default/commands",
+                  "commands/default/count",
+                  "commands/default/dadjoke",
+                  "commands/default/delcmd",
+                  "commands/default/dictionary",
+                  "commands/default/editcmd",
+                  "commands/default/eightball",
+                  "commands/default/emotes",
+                  "commands/default/fact",
+                  "commands/default/filesay",
+                  "commands/default/filesaystop",
+                  "commands/default/followage",
+                  "commands/default/followdate",
+                  "commands/default/game",
+                  "commands/default/gamesplayed",
+                  "commands/default/nuke",
+                  "commands/default/permit",
+                  "commands/default/ping",
+                  "commands/default/quote",
+                  "commands/default/setcommand",
+                  "commands/default/setgame",
+                  "commands/default/settitle",
+                  "commands/default/skip",
+                  "commands/default/song",
+                  "commands/default/songqueue",
+                  "commands/default/sr",
+                  "commands/default/title",
+                  "commands/default/uptime",
+                  "commands/default/urbandictionary",
+                  "commands/default/vanish",
+                  "commands/default/volume",
+                  "commands/default/votekick",
+                  "commands/default/voteskip",
+                  "commands/default/wrongsong"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Keywords",
+            "root": "keywords/index",
+            "pages": [
+              "keywords/autoreason",
+              "keywords/flags",
+              "keywords/phrase-groups",
+              "keywords/variables"
+            ]
+          },
+          {
+            "group": "Lookalikes",
+            "root": "lookalikes/index",
+            "pages": [
+              "lookalikes/creating-lookalikes",
+              "lookalikes/installing-lookalikes",
+              "lookalikes/configuration-testing"
+            ]
+          },
+          {
+            "group": "Media request",
+            "root": "mediarequest/index",
+            "pages": [
+              "mediarequest/requesting-songs",
+              "mediarequest/moderation",
+              "mediarequest/backup-playlist"
+            ]
+          },
+          {
+            "group": "Nukes",
+            "root": "nukes/index",
+            "pages": [
+              "nukes/usage"
+            ]
+          },
+          {
+            "group": "Variables",
+            "root": "variables/index",
+            "pages": [
+              "variables/7tvemotes",
+              "variables/accountage",
+              "variables/bits",
+              "variables/botuptime",
+              "variables/bttvemotes",
+              "variables/channel",
+              "variables/charity",
+              "variables/chatters",
+              "variables/count",
+              "variables/countdown",
+              "variables/countup",
+              "variables/customapi",
+              "variables/downtime",
+              "variables/echo",
+              "variables/eval",
+              "variables/ffzemotes",
+              "variables/followage",
+              "variables/fromindex",
+              "variables/game",
+              "variables/gamesplayed",
+              "variables/indexes",
+              "variables/lastfm",
+              "variables/leagueoflegends",
+              "variables/mastodon",
+              "variables/math",
+              "variables/msgid",
+              "variables/pathdecode",
+              "variables/pathencode",
+              "variables/query",
+              "variables/querystring",
+              "variables/quote",
+              "variables/randint",
+              "variables/references",
+              "variables/repeat",
+              "variables/rngphrase",
+              "variables/sender",
+              "variables/setgame",
+              "variables/settitle",
+              "variables/teamfighttactics",
+              "variables/tiktok",
+              "variables/time",
+              "variables/title",
+              "variables/twitchemotes",
+              "variables/twitchreward",
+              "variables/uptime",
+              "variables/urldecode",
+              "variables/urlencode",
+              "variables/user",
+              "variables/valorant",
+              "variables/weather",
+              "variables/x",
+              "variables/youtube"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/Fossabot",
+      "discord": "https://fossabot.com/discord"
+    },
+    "links": [
+      {
+        "header": "Stay Connected",
+        "items": [
+          {
+            "label": "Twitch",
+            "href": "https://twitch.tv/Fossabot"
+          },
+          {
+            "label": "Discord",
+            "href": "https://fossabot.com/discord"
+          },
+          {
+            "label": "X",
+            "href": "https://x.com/Fossabot"
+          }
+        ]
+      },
+      {
+        "header": "More",
+        "items": [
+          {
+            "label": "Terms of Service",
+            "href": "https://fossabot.com/pages/terms"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://fossabot.com/pages/privacy"
+          }
+        ]
+      }
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/commands/Creating-Commands",
+      "destination": "/commands/custom-commands"
+    }
+  ]
+}

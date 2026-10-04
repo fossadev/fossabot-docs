@@ -17,3 +17,13 @@ MD031: false
 
 # Requiring a language in code blocks (we use them for some text formatting)
 MD040: false
+
+# Allow Mintlify components (<Info>, <Warning>, ...) and inline HTML in MDX
+MD033: false
+
+# Page titles live in frontmatter rather than a leading H1
+MD041: false
+
+# Newer rules that flag pre-existing content style
+MD059: false
+MD060: false

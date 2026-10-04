@@ -1,8 +1,8 @@
 # Fossabot Docs
 
-![Cloudflare Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fcloudflare-pages-badges.wallis.workers.dev%2F%3FprojectName%3Dfossabot-docs) [![Markdown linting](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml/badge.svg)](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml)
+[![Markdown linting](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml/badge.svg)](https://github.com/fossadev/fossabot-docs/actions/workflows/markdown-lint.yaml)
 
-> The official public Fossabot documentation, hosted at [docs.fossabot.com](https://docs.fossabot.com).
+> The official public Fossabot documentation, hosted at [fossabot.com/docs](https://fossabot.com/docs).
 
 ## Feedback
 
@@ -12,34 +12,33 @@ If you would like to give feedback, or bring up anything you'd typically make a 
 
 ## Setup
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
-### Installation
-
-```
-$ yarn
-```
+This website is built using [Mintlify](https://mintlify.com). The site lives in the `docs/` directory, with navigation and site settings defined in [`docs/docs.json`](docs/docs.json).
 
 ### Local Development
 
 ```
-$ yarn start
+$ cd docs
+$ npx mint dev
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local preview at `http://localhost:3000`. Most changes are reflected live without having to restart the server.
 
-### Build
+### Adding a page
+
+Create an `.mdx` file under `docs/` with a `title` in its frontmatter, then add its path (without the extension) to the `navigation` section of `docs/docs.json`.
+
+### Validation
 
 ```
-$ yarn build
+$ cd docs
+$ npx mint validate
+$ npx mint broken-links
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ### Linting
 
 ```
-$ yarn lint
+$ npx markdownlint-cli2 "docs/**/*.mdx"
 ```
 
 Lints/validates all markdown files in the project.
