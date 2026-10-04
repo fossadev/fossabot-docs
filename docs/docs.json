@@ -13,6 +13,9 @@
     "dark": "/img/logo.svg",
     "href": "https://fossabot.com"
   },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
+  },
   "navigation": {
     "tabs": [
       {
