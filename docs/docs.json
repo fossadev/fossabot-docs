@@ -14,7 +14,7 @@
     "href": "https://fossabot.com"
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude"]
+    "options": ["copy", "view", "chatgpt", "claude", "grok"]
   },
   "navigation": {
     "tabs": [
