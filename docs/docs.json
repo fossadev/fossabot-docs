@@ -171,6 +171,7 @@
               "variables/querystring",
               "variables/indexes",
               "variables/fromindex",
+              "variables/argument-range",
               "variables/msgid",
               "variables/bits",
               "variables/sender",
