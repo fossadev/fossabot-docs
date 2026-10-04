@@ -10,7 +10,7 @@
   "favicon": "/img/favicon.ico",
   "logo": {
     "light": "/img/logo.svg",
-    "dark": "/img/logo.svg",
+    "dark": "/img/logo-dark.svg",
     "href": "https://fossabot.com"
   },
   "contextual": {
