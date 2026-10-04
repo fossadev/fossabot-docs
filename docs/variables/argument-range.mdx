@@ -1,0 +1,59 @@
+---
+title: "$(start:end)"
+---
+
+Returns the arguments between two argument indexes following a command name, including both the start and end arguments.
+
+Leave out the end index to return every argument from the start index onwards.
+
+| Syntax | Returns |
+| --- | --- |
+| `$(2)` | The argument at index 2, the same as [**\$(index2)**](/variables/indexes) |
+| `$(2:)` | All arguments from index 2 onwards, the same as [**\$(fromindex2)**](/variables/fromindex) |
+| `$(1:3)` | Arguments 1, 2 and 3 |
+
+If fewer arguments are provided than the end index, all arguments from the start index onwards are returned.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a **fallback response**, that will be returned if no argument at the start index is provided.
+
+## Example Usage
+
+* A command with the name `!verycoolname` and a response of the following:
+
+    ```
+    $(1:3 this is a fallback response)
+    ```
+
+    If triggered by `!verycoolname test1 test2 test3 test4`, would return the following response:
+
+    ```
+    test1 test2 test3
+    ```
+
+    If triggered by `!verycoolname test1 test2`, would return the following response:
+
+    ```
+    test1 test2
+    ```
+
+    And if triggered by only `!verycoolname`, would return the following response:
+
+    ```
+    this is a fallback response
+    ```
+
+#### Error Output
+
+* In case no argument at the start index is provided, as well as no fallback response, returns the following:
+
+    ```
+    [Error: Index <index> is not in arguments.]
+    ```
+
+* In case the end index is lower than the start index, or either index is not a number, returns the following:
+
+    ```
+    [Error: Invalid tag]
+    ```
