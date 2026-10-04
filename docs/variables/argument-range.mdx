@@ -4,13 +4,14 @@ title: "$(start:end)"
 
 Returns the arguments between two argument indexes following a command name, including both the start and end arguments.
 
-Leave out the end index to return every argument from the start index onwards.
+Leave out the end index to return every argument from the start index onwards, or leave out the start index to begin at the first argument.
 
 | Syntax | Returns |
 | --- | --- |
 | `$(2)` | The argument at index 2, the same as [**\$(index2)**](/variables/indexes) |
 | `$(2:)` | All arguments from index 2 onwards, the same as [**\$(fromindex2)**](/variables/fromindex) |
 | `$(1:3)` | Arguments 1, 2 and 3 |
+| `$(:3)` | The first 3 arguments, the same as `$(1:3)` |
 
 If fewer arguments are provided than the end index, all arguments from the start index onwards are returned.
 
