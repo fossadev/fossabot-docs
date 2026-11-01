@@ -4,38 +4,186 @@ title: "$(youtube)"
 
 <img src="/img/variables/youtube-logo.svg" width="140" alt="YouTube logo" />
 
-Returns the latest YouTube video of a channel or a playlist.
+Returns metadata about the latest YouTube video of a channel or a playlist that can be accessed via multiple different variable members.
 
 **We use YouTube API Services to query data that powers this variable. Use of this variable is subject to the [Google Privacy Policy](https://policies.google.com/privacy) and [YouTube Terms of Service](https://www.youtube.com/t/terms)**
 
+## $(youtube)
+
+Returns the title and URL of the latest YouTube video of a channel or a playlist.
+
 #### Parameters
 
-This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**.
+This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**. Prefix a playlist ID with `playlist=`.
 
 #### Example Output
 
-* `$(youtube xqcow)`
+* `$(youtube Fossabot)`
 
     ```
-    xQc Cries from Laughing at Fan-Made Memes | Reddit Recap #213 - https://youtu.be/ONPkz0cHt9E
+    Getting started with Fossabot - https://youtu.be/VIDEO_ID
     ```
 
-* `$(youtube UCmDTrq0LNgPodDOFZiSbsww)`
+* `$(youtube playlist=PLAYLIST_ID)`
 
     ```
-    xQc Cries from Laughing at Fan-Made Memes | Reddit Recap #213 - https://youtu.be/ONPkz0cHt9E
-    ```
-
-* `$(youtube playlist=PLKeR9CeyAc9brDTtmz6DcCQpy5mA6m9AK)`
-
-    ```
-    You Wont Believe This Great Escape - https://youtu.be/6nXBfJ3ZGE4 
+    Getting started with Fossabot - https://youtu.be/VIDEO_ID
     ```
 
 #### Error Output
 
-* In case an invalid or no channel name, channel ID or playlist ID is provided, returns the following:
+* In case the channel cannot be found, returns the following:
 
     ```
-    [Error: YouTube API returned an error.]
+    [Error: Channel not found]
+    ```
+
+* In case no public, non-livestream videos are found, returns the following:
+
+    ```
+    [Error: No videos found]
+    ```
+
+## $(youtube.description)
+
+Returns the description of the latest YouTube video of a channel or a playlist.
+
+#### Parameters
+
+This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**. Prefix a playlist ID with `playlist=`.
+
+#### Example Output
+
+* `$(youtube.description Fossabot)`
+
+    ```
+    Learn how to add Fossabot to your stream.
+    ```
+
+* `$(youtube.description playlist=PLAYLIST_ID)`
+
+    ```
+    Learn how to add Fossabot to your stream.
+    ```
+
+#### Error Output
+
+* In case the channel cannot be found, returns the following:
+
+    ```
+    [Error: Channel not found]
+    ```
+
+* In case no public, non-livestream videos are found, returns the following:
+
+    ```
+    [Error: No videos found]
+    ```
+
+## $(youtube.title)
+
+Returns the title of the latest YouTube video of a channel or a playlist.
+
+#### Parameters
+
+This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**. Prefix a playlist ID with `playlist=`.
+
+#### Example Output
+
+* `$(youtube.title Fossabot)`
+
+    ```
+    Getting started with Fossabot
+    ```
+
+* `$(youtube.title playlist=PLAYLIST_ID)`
+
+    ```
+    Getting started with Fossabot
+    ```
+
+#### Error Output
+
+* In case the channel cannot be found, returns the following:
+
+    ```
+    [Error: Channel not found]
+    ```
+
+* In case no public, non-livestream videos are found, returns the following:
+
+    ```
+    [Error: No videos found]
+    ```
+
+## $(youtube.url)
+
+Returns the URL of the latest YouTube video of a channel or a playlist.
+
+#### Parameters
+
+This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**. Prefix a playlist ID with `playlist=`.
+
+#### Example Output
+
+* `$(youtube.url Fossabot)`
+
+    ```
+    https://youtu.be/VIDEO_ID
+    ```
+
+* `$(youtube.url playlist=PLAYLIST_ID)`
+
+    ```
+    https://youtu.be/VIDEO_ID
+    ```
+
+#### Error Output
+
+* In case the channel cannot be found, returns the following:
+
+    ```
+    [Error: Channel not found]
+    ```
+
+* In case no public, non-livestream videos are found, returns the following:
+
+    ```
+    [Error: No videos found]
+    ```
+
+## $(youtube.video_id)
+
+Returns the YouTube video ID of the latest video of a channel or a playlist.
+
+#### Parameters
+
+This variable takes **one** *required* parameter that is either a **channel name**, **channel ID** or **playlist ID**. Prefix a playlist ID with `playlist=`.
+
+#### Example Output
+
+* `$(youtube.video_id Fossabot)`
+
+    ```
+    VIDEO_ID
+    ```
+
+* `$(youtube.video_id playlist=PLAYLIST_ID)`
+
+    ```
+    VIDEO_ID
+    ```
+
+#### Error Output
+
+* In case the channel cannot be found, returns the following:
+
+    ```
+    [Error: Channel not found]
+    ```
+
+* In case no public, non-livestream videos are found, returns the following:
+
+    ```
+    [Error: No videos found]
     ```
