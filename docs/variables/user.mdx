@@ -366,6 +366,106 @@ This variable takes **one** *optional* parameter that is a **Twitch username** o
     [Error: Invalid username.]
     ```
 
+## $(user.time_offline)
+
+Returns how long a user has spent in your channel's chat while your stream was offline.
+
+This variable is only available on Twitch.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.time_offline)`
+
+    ```
+    5 minutes
+    ```
+
+* `$(user.time_offline fossabot)`
+
+    ```
+    2 hours and 10 minutes
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
+
+* In case Fossabot has no watchtime recorded for the user yet, returns the following:
+
+    ```
+    0 seconds
+    ```
+
+* In case the channel is not on Twitch, returns the following:
+
+    ```
+    [Error: This feature is not available on this platform.]
+    ```
+
+* In case Fossabot fails to fetch the user's watchtime, returns the following:
+
+    ```
+    [Error: Failed to fetch watchtime.]
+    ```
+
+## $(user.time_online)
+
+Returns how long a user has spent in your channel's chat while your stream was live.
+
+This variable is only available on Twitch.
+
+#### Parameters
+
+This variable takes **one** *optional* parameter that is a **Twitch username** of who to fetch the metadata of. Defaults to the sender if neither hardcoded nor provided at command execution, a user does not exist or is otherwise unavailable.
+
+#### Example Output
+
+* `$(user.time_online)`
+
+    ```
+    1 hour and 30 minutes
+    ```
+
+* `$(user.time_online fossabot)`
+
+    ```
+    12 hours and 2 minutes
+    ```
+
+#### Error Output
+
+* In case an invalid username is provided, returns the following:
+
+    ```
+    [Error: Invalid username.]
+    ```
+
+* In case Fossabot has no watchtime recorded for the user yet, returns the following:
+
+    ```
+    0 seconds
+    ```
+
+* In case the channel is not on Twitch, returns the following:
+
+    ```
+    [Error: This feature is not available on this platform.]
+    ```
+
+* In case Fossabot fails to fetch the user's watchtime, returns the following:
+
+    ```
+    [Error: Failed to fetch watchtime.]
+    ```
+
 ## $(user.uptime)
 
 Returns the time that has passed since a user's stream has gone live.

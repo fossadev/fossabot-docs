@@ -196,6 +196,82 @@ This variable does not take any parameters.
     Welcome to my stream!
     ```
 
+## $(sender.time_offline)
+
+Returns how long the sender has spent in your channel's chat while your stream was offline.
+
+This variable is only available on Twitch.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.time_offline)`
+
+    ```
+    5 minutes
+    ```
+
+#### Error Output
+
+* In case Fossabot has no watchtime recorded for the sender yet, returns the following:
+
+    ```
+    0 seconds
+    ```
+
+* In case the channel is not on Twitch, returns the following:
+
+    ```
+    [Error: This feature is not available on this platform.]
+    ```
+
+* In case Fossabot fails to fetch the sender's watchtime, returns the following:
+
+    ```
+    [Error: Failed to fetch watchtime.]
+    ```
+
+## $(sender.time_online)
+
+Returns how long the sender has spent in your channel's chat while your stream was live.
+
+This variable is only available on Twitch.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.time_online)`
+
+    ```
+    1 hour and 30 minutes
+    ```
+
+#### Error Output
+
+* In case Fossabot has no watchtime recorded for the sender yet, returns the following:
+
+    ```
+    0 seconds
+    ```
+
+* In case the channel is not on Twitch, returns the following:
+
+    ```
+    [Error: This feature is not available on this platform.]
+    ```
+
+* In case Fossabot fails to fetch the sender's watchtime, returns the following:
+
+    ```
+    [Error: Failed to fetch watchtime.]
+    ```
+
 ## $(sender.uptime)
 
 Returns the time that has passed since the sender's stream has gone live.
