@@ -196,6 +196,66 @@ This variable does not take any parameters.
     Welcome to my stream!
     ```
 
+## $(sender.time_offline)
+
+Returns the total time the sender has spent in the current channel's chat while the stream was **offline**. Returns `0 seconds` if the sender has not been seen in the channel's chat yet.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.time_offline)`
+
+    ```
+    2 hours and 15 minutes
+    ```
+
+#### Error Output
+
+* In case the channel is not on Twitch, returns the following:
+
+    ```
+    [Error: This feature is not available on this platform.]
+    ```
+
+* In case the watchtime could not be fetched, returns the following:
+
+    ```
+    [Error: Failed to fetch watchtime.]
+    ```
+
+## $(sender.time_online)
+
+Returns the total time the sender has spent in the current channel's chat while the stream was **live**. Returns `0 seconds` if the sender has not been seen in the channel's chat yet.
+
+#### Parameters
+
+This variable does not take any parameters.
+
+#### Example Output
+
+* `$(sender.time_online)`
+
+    ```
+    1 day, 4 hours and 30 minutes
+    ```
+
+#### Error Output
+
+* In case the channel is not on Twitch, returns the following:
+
+    ```
+    [Error: This feature is not available on this platform.]
+    ```
+
+* In case the watchtime could not be fetched, returns the following:
+
+    ```
+    [Error: Failed to fetch watchtime.]
+    ```
+
 ## $(sender.uptime)
 
 Returns the time that has passed since the sender's stream has gone live.
